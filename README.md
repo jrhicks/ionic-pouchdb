@@ -14,15 +14,9 @@ Getting Started
 
 * gulp
 
-CouchDB VM
------------
-
-* git submodule init
-
-* git submodule update
+CouchDB 1.5 VM
+---------------
 
 * cd couchdb_vm
 
 * vagrant up
-
-* vagrant reload
