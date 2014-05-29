@@ -8,13 +8,16 @@
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.2.0",
-    "wiredep": "^1.6.2",
+    "wiredep": "^1.7.1",
     "express": "^4.3.0",
     "express-livereload": "0.0.24",
     "path": "^0.4.9",
     "connect-slow": "^0.1.2",
     "cordova": "^3.5.0-0.2.4",
-    "corsproxy": "^0.2.14"
+    "corsproxy": "^0.2.14",
+    "http-proxy": "^1.1.4",
+    "connect": "^2.17.3",
+    "connect-livereload": "^0.4.0"
   },
   "devDependencies": {
     "gulp": "^3.6.2",

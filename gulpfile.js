@@ -56,7 +56,7 @@ var beep_on_error = {
 
 var app_server = require('./tasks/api_proxy_server.js');
 
-gulp.task('default', ['app_scss', 'app_watch', 'app_serve', 'app_build', 'couchdb_proxy']);
+gulp.task('default', ['app_scss', 'app_watch', 'app_serve', 'app_build']);
 
 gulp.task('app_serve', function() {
     app_server.run(9000, '/app');
