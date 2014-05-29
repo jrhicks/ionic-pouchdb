@@ -1,0 +1,43 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  # All Vagrant configuration is done here. The most common configuration
+  # options are documented and commented below. For a complete reference,
+  # please see the online documentation at vagrantup.com.
+
+  # Every Vagrant virtual environment requires a box to build off of.
+
+  #node['couch_db']['config']['httpd']['bind_address'] = "0.0.0.0"
+
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+
+  config.ssh.forward_agent = true
+  config.vm.network :forwarded_port, guest: 6003, host: 6003
+  config.vm.network :forwarded_port, guest: 5984, host: 5984
+
+  config.vm.provision :chef_solo do |chef|
+    chef.json = {
+      "couch_db" => {
+          "config" => {
+              "httpd" => {
+                  "bind_address" => "0.0.0.0",
+                  "enable_cors" => true
+              },
+              "cors" => {
+                  "credentials" => true,
+                  "origins" => 'http://localhost:9000'
+              }
+          }
+      }
+    }
+
+    chef.cookbooks_path = "cookbooks"
+    chef.add_recipe("apt")
+    chef.add_recipe("couchdb::ppa")
+  end
+end

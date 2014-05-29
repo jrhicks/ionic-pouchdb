@@ -1,0 +1,22 @@
+{
+  "name": "ionic-project",
+  "dependencies": {
+    "angular": "~1.2.12",
+    "ionic": "v1.0.0-beta.5b",
+    "pouchdb": "~2.2.2",
+    "pouchdb-authentication": "https://github.com/jrhicks/pouchdb-authentication.git#v0.1.1.5",
+    "angular-uuid-service": "~0.0.1"
+  },
+  "overrides": {
+    "pouchdb-authentication": {
+      "dependencies": {
+        "pouchdb": "~2.2.0"
+      }
+    },
+    "angular-pouchdb": {
+      "dependencies": {
+        "pouchdb": "~2.2.0"
+      }
+    }
+  }
+}

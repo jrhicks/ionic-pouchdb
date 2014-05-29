@@ -1,0 +1,11 @@
+.animate-item.ng-enter,
+.animate-item.ng-leave.ng-leave-active {
+    left: 500px;
+    transition: 300ms ease-in all;
+}
+.animate-item.ng-enter.ng-enter-active,
+.animate-item.ng-leave {
+    left: 0;
+    transition: 300ms ease-in all;
+}
+
