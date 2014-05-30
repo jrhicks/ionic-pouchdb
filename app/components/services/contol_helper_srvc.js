@@ -2,14 +2,22 @@
 angular.module('app.control_helper_srvc', [])
     .service('controlHelper', function(pouch) {
         return {
-            run_listener: '',
+            cancel: function() {
+                if(this.changes != undefined) {
+                    if(this.changes.cancel != undefined)
+                    {
+                        this.changes.cancel();
+                    }
+                }
+            },
 
             run: function(f) {
                 // Run the function immediately and on database change
+                var controlHelper = this;
                 f();
-                var that = this;
                 pouch.db.info(function(err, info) {
-                    that.run_listener = pouch.db.changes({
+                    controlHelper.cancel();
+                    controlHelper.changes = pouch.db.changes({
                         since: info.update_seq,
                         live: true
                     }).on('change', f);
