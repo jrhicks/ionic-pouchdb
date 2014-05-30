@@ -9,33 +9,29 @@ angular.module('app.todos_ctrl', [])
                 views: {
                     'todos-tab': {
                         templateUrl: 'states/todos/index.html',
-                        controller: 'TodosIndexCtrl'
+                        controller: 'TodosIndexCtrl as todosIndex'
                     }
                 }
             })
     })
 
-    .controller('TodosIndexCtrl', function ($scope, todosService, db) {
-        $scope.form = {};
+    .controller('TodosIndexCtrl', function ($scope, todosService, pouch, controlHelper) {
+        var self = this;
 
-        $scope.todos = [];
-        db.onChange( function() {
+        self.form = {};
+        self.todos = [];
+
+        controlHelper.run( function() {
             todosService.all()
                 .then(function(results) {
-                    $scope.todos = results["rows"];
+                    self.todos = results["rows"];
+                    $scope.$digest();
                 });
         });
 
-        $scope.add = function (form) {
-            todosService.add(form)
-                .then(function(response) {
-                    })
-                .catch(function(error) {
-                    })
-                .finally(function() {
-                    });
-
-            $scope.form = {};
+        this.add = function (form) {
+            todosService.add(form);
+            self.form = {};
         };
 
 

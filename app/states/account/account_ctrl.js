@@ -25,7 +25,7 @@ angular.module('app.account_ctrl', [])
 
     })
 
-    .controller('AccountIndexCtrl', function ($scope, $stateParams,  $ionicLoading) {
+    .controller('AccountIndexCtrl', function ($scope, $stateParams,  $ionicLoading, db) {
         $scope.account = {username: null};
 
         $scope.signOut = function() {
@@ -44,20 +44,18 @@ angular.module('app.account_ctrl', [])
 //                })
         };
 
-        $scope.signIn = function(settings) {
-            $ionicLoading.show({template: 'Signing In <i class="ion-loading-c" />'});
-//            xxx.signIn(settings.username, settings.password)
-//                .then(
-//                    function() {
-//                        $ionicLoading.hide();
-//                        $scope.account = hoodieAccount;
-//                    },
-//                    function() {
-//                        $ionicLoading.hide();
-//                        toaster.pop('failure', "Login Failed", "Please check your username and password and try again.");
-//                        $scope.account = hoodieAccount;
-//                    }
-//                )
+        $scope.login = function(settings) {
+            $ionicLoading.show({template: 'Logging In <i class="ion-loading-c" />'});
+            db.login(settings.username, settings.password)
+                .then(
+                    function(response) {
+                        $ionicLoading.hide();
+                    },
+                    function(err) {
+                        $ionicLoading.hide();
+                        toaster.pop('failure', "Login Failed", "Please check your username and password and try again.");
+                    }
+                )
             };
     })
 

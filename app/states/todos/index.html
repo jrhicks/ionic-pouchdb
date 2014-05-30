@@ -4,10 +4,10 @@
 
         <div class="row">
             <div class="col col-80">
-                <input type="text" placeholder="Enter New Task!" ng-model="form.title">
+                <input type="text" placeholder="Enter New Task!" ng-model="todosIndex.form.title">
             </div>
             <div class="co col-20">
-                <button class="button" ng-click="add(form)">
+                <button class="button" ng-click="todosIndex.add(todosIndex.form)">
                     Add
                 </button>
             </div>
@@ -17,7 +17,7 @@
             <div class="item item-divider">
                 Current Todos
             </div>
-            <label class="item animate-item" ng-repeat="todo in todos track by todo.id">
+            <label class="item animate-item" ng-repeat="todo in todosIndex.todos track by todo.id">
                 {{todo.doc.title}}
             </label>
         </div>

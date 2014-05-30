@@ -12,11 +12,6 @@
       "dependencies": {
         "pouchdb": "~2.2.0"
       }
-    },
-    "angular-pouchdb": {
-      "dependencies": {
-        "pouchdb": "~2.2.0"
-      }
     }
   }
 }

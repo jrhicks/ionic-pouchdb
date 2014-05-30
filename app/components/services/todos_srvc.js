@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('app.todos_srvc', [])
-    .factory('todosService', function(db, rfc4122) {
+    .service('todosService', function(pouch, rfc4122) {
 
         return {
             add: function(obj) {
                 obj._id = 'todo_'+rfc4122.v4();
                 obj.doc_type = 'todo';
                 obj.created_at = new Date();
-                return db.put(obj);
+                return pouch.db.put(obj);
             },
             all: function() {
                 var allTodos = function(doc) {
@@ -16,7 +16,7 @@ angular.module('app.todos_srvc', [])
                         emit(doc.created_at, doc._id);
                     }
                 }
-                return db.query(allTodos, {descending: true, include_docs : true});
+                return pouch.db.query(allTodos, {descending: true, include_docs : true});
             }
         };
     });

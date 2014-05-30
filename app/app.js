@@ -5,9 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('app', ['ionic',
                        'ui.router',
-                       'pouchdb',
+                       'app.pouch_db_srvc',
+                       'app.control_helper_srvc',
                        'uuid',
-                       'app.db',
                        'app.welcome_ctrl',
                        'app.todos_ctrl',
                        'app.todos_srvc',
