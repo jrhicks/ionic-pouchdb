@@ -26,9 +26,9 @@ var paths = {
     index: ['./app/index.html'],
     app_js: ['./app/app.js'],
     components_js: ['./app/components/**/*.js'],
-    states_js: ['./app/states/**/*.js'],
+    states_js: ['./app/states/**/*.js','./app/controllers/**/*.js','./app/models/**/*.js'],
     scss: ['./scss/**/*.scss'],
-    css: ['./app/css/**/*.css'],
+    css: ['./app/assets/css/**/*.css'],
     states_html: ['./app/states/**/*.html'],
     fonts: ['./bower_components/ionic/release/fonts/*.*'],
     lib_js: wiredep().js,
@@ -75,7 +75,7 @@ gulp.task('app_build', function(done) {
     var fonts = gulp.src(paths.fonts)
         .pipe(gulp.dest('./app/fonts'));
 //    var app_js = gulp.src(paths.app_js);
-    var components_js = gulp.src(paths.components_js, {base: './app/compoonents'});
+    var components_js = gulp.src(paths.components_js, {base: './app/components'});
     var states_js = gulp.src(paths.states_js, { base: './app/states' });
     var lib_js = gulp.src(paths.lib_js)
         .pipe(gulp.dest('./app/lib'));

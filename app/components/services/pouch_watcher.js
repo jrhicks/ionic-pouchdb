@@ -1,6 +1,7 @@
 'use strict';
-angular.module('app.control_helper_srvc', [])
-    .service('controlHelper', function(pouch) {
+
+angular.module('app.pouch_watcher', [])
+    .service('PouchWatcher', function(Pouch) {
         return {
             cancel: function() {
                 if(this.changes != undefined) {
@@ -11,13 +12,14 @@ angular.module('app.control_helper_srvc', [])
                 }
             },
 
-            run: function(f) {
+            use: function(f) {
+                // Cancel previous change watchers
                 // Run the function immediately and on database change
                 var controlHelper = this;
                 f();
-                pouch.db.info(function(err, info) {
+                Pouch.info(function(err, info) {
                     controlHelper.cancel();
-                    controlHelper.changes = pouch.db.changes({
+                    controlHelper.changes = Pouch.changes({
                         since: info.update_seq,
                         live: true
                     }).on('change', f);

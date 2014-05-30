@@ -5,14 +5,17 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('app', ['ionic',
                        'ui.router',
-                       'app.pouch_db_srvc',
-                       'app.control_helper_srvc',
                        'uuid',
-                       'app.welcome_ctrl',
-                       'app.todos_ctrl',
-                       'app.todos_srvc',
-                       'app.account_ctrl',
-                       'app.plugin_console_ctrl'
+                       // Components
+                       'app.pouch',
+                       'app.pouch_watcher',
+                       'app.pouch_sync',
+                       // Controllers
+                       'app.welcome_controller',
+                       'app.todos_controller',
+                       'app.accounts_controller',
+                       // Models
+                       'app.todo'
     ])
 
     .run(function($ionicPlatform) {

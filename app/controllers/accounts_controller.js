@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app.account_ctrl', [])
+angular.module('app.accounts_controller', [])
 
     .config(function ($stateProvider) {
         // Collection States
@@ -8,7 +8,7 @@ angular.module('app.account_ctrl', [])
                 url: '/account/index',
                 views: {
                     'account-tab': {
-                        templateUrl: 'states/account/index.html',
+                        templateUrl: 'views/account/index.html',
                         controller: 'AccountIndexCtrl'
                     }
                 }
@@ -17,7 +17,7 @@ angular.module('app.account_ctrl', [])
                 url: '/account/signup',
                 views: {
                     'account-tab': {
-                        templateUrl: 'states/account/signup.html',
+                        templateUrl: 'views/account/signup.html',
                         controller: 'AccountSignupCtrl'
                     }
                 }
@@ -25,7 +25,7 @@ angular.module('app.account_ctrl', [])
 
     })
 
-    .controller('AccountIndexCtrl', function ($scope, $stateParams,  $ionicLoading, db) {
+    .controller('AccountIndexCtrl', function ($scope, $stateParams,  $ionicLoading, Pouch) {
         $scope.account = {username: null};
 
         $scope.signOut = function() {
@@ -46,7 +46,7 @@ angular.module('app.account_ctrl', [])
 
         $scope.login = function(settings) {
             $ionicLoading.show({template: 'Logging In <i class="ion-loading-c" />'});
-            db.login(settings.username, settings.password)
+            Pouch.remotedb.login(settings.username, settings.password)
                 .then(
                     function(response) {
                         $ionicLoading.hide();

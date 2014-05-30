@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app.todos_ctrl', [])
+angular.module('app.todos_controller', [])
 
     .config(function ($stateProvider) {
         // Collection States
@@ -8,21 +8,21 @@ angular.module('app.todos_ctrl', [])
                 url: '/todos/index',
                 views: {
                     'todos-tab': {
-                        templateUrl: 'states/todos/index.html',
+                        templateUrl: 'views/todos/index.html',
                         controller: 'TodosIndexCtrl as todosIndex'
                     }
                 }
             })
     })
 
-    .controller('TodosIndexCtrl', function ($scope, todosService, pouch, controlHelper) {
+    .controller('TodosIndexCtrl', function ($scope, Todo, PouchWatcher) {
         var self = this;
 
         self.form = {};
         self.todos = [];
 
-        controlHelper.run( function() {
-            todosService.all()
+        PouchWatcher.use( function() {
+            Todo.all()
                 .then(function(results) {
                     self.todos = results["rows"];
                     $scope.$digest();
