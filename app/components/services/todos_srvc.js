@@ -10,6 +10,7 @@ angular.module('app.todos_srvc', [])
                 obj.created_at = new Date();
                 return pouch.db.put(obj);
             },
+
             all: function() {
                 var allTodos = function(doc) {
                     if (doc.doc_type === 'todo') {
