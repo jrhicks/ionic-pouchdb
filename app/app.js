@@ -3,19 +3,23 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('app', ['ionic',
+angular.module('app', [
+                       // Lib
+                       'ionic',
                        'ui.router',
                        'uuid',
+                       'ngStorage',
                        // Components
                        'app.pouch',
                        'app.pouch_watcher',
                        'app.pouch_sync',
                        // Controllers
-                       'app.welcome_controller',
+                       'app.tabs_controller',
                        'app.todos_controller',
                        'app.accounts_controller',
                        // Models
-                       'app.todo'
+                       'app.todo',
+                       'app.account'
     ])
 
     .run(function($ionicPlatform) {
@@ -34,29 +38,6 @@ angular.module('app', ['ionic',
 
     })
 
-
-//    .config(function(hoodieProvider) {
-//        var deviceType = (navigator.userAgent.match(/iPad/i))  == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i))  == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "Web";
-//        var host=""
-//
-//        switch(deviceType) {
-//            case "iPad":
-//                host = "http://localhost:9000"
-//                break;
-//            case "iPhone":
-//                host = "http://localhost:9000"
-//                break;
-//            case "Android":
-//                // Access host machine from Genymotion using  on network vboxnet0
-//                // Run ifconfig vboxnet0 or on Windows ipconfig to determine
-//                host = "http://191.168.228.1:9000"
-//                break;
-//            default:
-//                host = "http://localhost:9000"
-//        }
-//        hoodieProvider.url(host);
-//    })
-
     .config(function ($urlRouterProvider) {
-        $urlRouterProvider.otherwise('/welcome/todos/index');
+        $urlRouterProvider.otherwise('/tabs/todos/index');
     });

@@ -5,7 +5,8 @@
     "ionic": "v1.0.0-beta.5b",
     "pouchdb": "~2.2.2",
     "pouchdb-authentication": "https://github.com/jrhicks/pouchdb-authentication.git#v0.1.1.5",
-    "angular-uuid-service": "~0.0.1"
+    "angular-uuid-service": "~0.0.1",
+    "ngstorage": "~0.3.0"
   },
   "overrides": {
     "pouchdb-authentication": {

@@ -1,20 +1,61 @@
 'use strict';
 
+// To use this service in the console
+// ps = angular.element(document.body).injector().get("PouchSync")
+
 angular.module('app.pouch_sync', [])
-    .service('PouchSync', function() {
+    .service('PouchSync', function(Pouch, Account) {
         return {
             remotedb: '',
-            replicate_to: '',
-            replicate_from: '',
+            replication_to_remote: undefined,
+            replication_from_remote: undefined,
 
-            connect: function(username, password) {
-                this.remotedb = new PouchDB("http://localhost:5984/anton");
-                this.replicate_to = this.db.replicate.to(this.remotedb, {live: true}).on('error', function() {
-                    alert(err);
-                });
-                this.replicate_from = this.db.replicate.from(this.remotedb, {live: true}).on('error', function(err) {
-                    alert(err);
-                });
+            disconnect: function() {
+                var self = this;
+                if(self.replication_to_remote != undefined) {
+                    if(self.replication_to_remote.cancel != undefined)
+                    {
+                        self.replication_to_remote.cancel();
+                    }
+                }
+
+                if(self.replication_from_remote != undefined) {
+                    if(self.replication_from_remote.cancel != undefined)
+                    {
+                        self.replication_from_remote.cancel();
+                    }
+                }
+            },
+
+            connect: function() {
+                this.disconnect();
+                this.remotedb = new PouchDB(Account.database);
+                this.replication_to_remote = Pouch.replicate.to(this.remotedb, {live: true});
+                this.replication_from_remote = Pouch.replicate.from(this.remotedb, {live: true});
+            },
+
+            sync: function() {
+                this.disconnect();
+                this.remotedb = new PouchDB(Account.database);
+                this.replication_to_remote = Pouch.replicate.to(this.remotedb, {live: true});
+                this.replication_from_remote = Pouch.replicate.from(this.remotedb, {live: true});
+            },
+
+            isConnected: function() {
+                var self = this;
+                if (typeof self.replication_to_remote === "undefined") {
+                    return false;
+                }
+                if (typeof self.replication_from_remote === "undefined") {
+                    return false;
+                }
+                if (self.replication_to_remote.cancelled) {
+                    return false;
+                }
+                if (self.replication_from_remote.cancelled) {
+                    return false;
+                }
+                return true;
             }
         }
     });

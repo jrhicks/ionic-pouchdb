@@ -6,51 +6,54 @@
             <a class="button" href="#welcome/account/signup">Sign Up!</a>
         </ion-nav-buttons>
 
-        <div class="card" ng-if="account.username != null">
+        <div class="card" ng-if="true">
             <div class="item item-divider">
-                Welcome
+                Account Settings
             </div>
             <div class="item item-text-wrap">
-                You are currently signed in as {{account.username}}
-            </div>
-
-            <label class="item">
-                <button class="button button-block button-stable" ng-click="signOut()">
-                    Sign Out
-                </button>
-            </label>
-        </div>
-
-        <div class="card" ng-if="account.username == null">
-            <div class="item item-divider">
-                Login
-            </div>
-            <div class="item item-text-wrap">
-                Login to access your online todo items.
+                Configure your account settings to enable syncing todos with an online account.
             </div>
 
             <label class="item item-input">
                 <span class="input-label">Database</span>
-                <input type="text" ng-model="$settings.database">
+                <input type="text" ng-model="account.database">
             </label>
+
 
             <label class="item item-input">
                 <span class="input-label">Username</span>
-                <input type="text" ng-model="$settings.username">
+                <input type="text" ng-model="account.username">
             </label>
             <label class="item item-input">
                 <span class="input-label">Password</span>
-                <input type="password" ng-model="$settings.password">
+                <input type="password" ng-model="account.password">
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Stay Connected</span>
+                <label class="toggle">
+                    <input type="checkbox" ng-model="account.stayConnected">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
             </label>
 
             <label class="item">
-                <button class="button button-block button-stable" ng-click="login($settings)">
-                    Login
+                <button class="button button-block button-stable" ng-click="save(account)">
+                    Save Settings
                 </button>
             </label>
 
         </div>
 
+        <div class="card" ng-if="pouchSync.isConnected()">
+            Connected
+        </div>
+
+        <div class="card">
+            Is Connected: {{pouchSync.isConnected()}}
+        </div>
 
     </ion-content>
 </ion-view>

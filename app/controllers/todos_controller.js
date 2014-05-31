@@ -4,7 +4,7 @@ angular.module('app.todos_controller', [])
     .config(function ($stateProvider) {
         // Collection States
         $stateProvider
-            .state('welcome.todos', {
+            .state('tabs.todos', {
                 url: '/todos/index',
                 views: {
                     'todos-tab': {
@@ -30,7 +30,7 @@ angular.module('app.todos_controller', [])
         });
 
         this.add = function (form) {
-            todosService.add(form);
+            Todo.add(form);
             self.form = {};
         };
 
