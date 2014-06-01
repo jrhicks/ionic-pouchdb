@@ -8,7 +8,7 @@ angular.module('app.todo', [])
                 obj._id = 'todo_'+rfc4122.v4();
                 obj.doc_type = 'todo';
                 obj.created_at = new Date();
-                return Pouch.put(obj);
+                return Pouch.db.put(obj);
             },
 
             all: function() {
@@ -17,7 +17,7 @@ angular.module('app.todo', [])
                         emit(doc.created_at, doc._id);
                     }
                 }
-                return Pouch.query(allTodos, {descending: true, include_docs : true});
+                return Pouch.db.query(allTodos, {descending: true, include_docs : true});
             }
         };
     });

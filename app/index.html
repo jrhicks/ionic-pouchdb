@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="/assets/css/finger.css">
     <link rel="stylesheet" href="/assets/css/ionic.app.css">
     <link rel="stylesheet" href="/assets/css/item-animate.css">
+    <link rel="stylesheet" href="/states/todos/todo.css">
     <!-- endinject -->
 
 </head>
 
 <body ng-app="app">
+
 
     <ion-nav-bar class="bar-positive">
         <ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-back">
@@ -50,13 +52,13 @@
     <!-- inject:js -->
     <script src="/app.js"></script>
     <script src="/components/services/pouch.js"></script>
-    <script src="/components/services/pouch_sync.js"></script>
-    <script src="/controllers/accounts_controller.js"></script>
-    <script src="/components/services/pouch_watcher.js"></script>
-    <script src="/controllers/tabs_controller.js"></script>
-    <script src="/controllers/todos_controller.js"></script>
-    <script src="/models/account.js"></script>
-    <script src="/models/todo.js"></script>
+    <script src="/components/services/pouch_publisher.js"></script>
+    <script src="/states/account/account.js"></script>
+    <script src="/states/account/accounts_controller.js"></script>
+    <script src="/states/info/info_controller.js"></script>
+    <script src="/states/tabs/tabs_controller.js"></script>
+    <script src="/states/todos/todo.js"></script>
+    <script src="/states/todos/todos_controller.js"></script>
     <!-- endinject -->
 
     <script src="cordova.js"></script>

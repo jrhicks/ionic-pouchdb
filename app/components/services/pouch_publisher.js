@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('app.pouch_watcher', [])
-    .service('PouchWatcher', function(Pouch) {
+angular.module('app.pouch_publisher', [])
+    .service('PouchPublisher', function(Pouch) {
         return {
             cancel: function() {
                 if(this.changes != undefined) {
@@ -17,9 +17,9 @@ angular.module('app.pouch_watcher', [])
                 // Run the function immediately and on database change
                 var controlHelper = this;
                 f();
-                Pouch.info(function(err, info) {
+                Pouch.db.info(function(err, info) {
                     controlHelper.cancel();
-                    controlHelper.changes = Pouch.changes({
+                    controlHelper.changes = Pouch.db.changes({
                         since: info.update_seq,
                         live: true
                     }).on('change', f);

@@ -13,14 +13,18 @@
             </div>
         </div>
 
-        <div class="list">
-            <div class="item item-divider">
-                Current Todos
-            </div>
-            <label class="item animate-item" ng-repeat="todo in todosIndex.todos track by todo.id">
-                {{todo.doc.title}}
-            </label>
+        <div class="card" ng-if="todosIndex.loading">
+            Loading ...
         </div>
+
+        <ion-list>
+            <ion-item href="#/tabs/todos/edit/{{todo.id}}" class="item animate-item" ng-repeat="todo in todosIndex.todos track by todo.id">
+             <span class="todo-done-{{todo.doc.isComplete}}">
+                 {{todo.doc.title}}
+             </span>
+            </ion-item>
+        </ion-list>
+
     </ion-content>
 </ion-view>
 

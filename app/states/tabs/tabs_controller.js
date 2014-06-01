@@ -6,12 +6,12 @@ angular.module('app.tabs_controller', [])
             .state('tabs', {
                 url: '/tabs',
                 controller: "TabsController",
-                templateUrl: 'views/tabs/index.html'
+                templateUrl: 'states/tabs/index.html'
             })
     })
-    .controller('TabsController', function ($scope, PouchSync) {
+    .controller('TabsController', function ($scope, Pouch) {
         $scope.accountIcon = function() {
-            if (PouchSync.isConnected()) {
+            if (Pouch.isConnected()) {
                 return "ion-ios7-checkmark-outline"
             } else {
                 return "ion-ios7-circle-outline"

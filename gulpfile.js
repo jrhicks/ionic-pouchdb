@@ -28,7 +28,7 @@ var paths = {
     components_js: ['./app/components/**/*.js'],
     states_js: ['./app/states/**/*.js','./app/controllers/**/*.js','./app/models/**/*.js'],
     scss: ['./scss/**/*.scss'],
-    css: ['./app/assets/css/**/*.css'],
+    css: ['./app/assets/css/**/*.css','./app/states/**/*.css'],
     states_html: ['./app/states/**/*.html'],
     fonts: ['./bower_components/ionic/release/fonts/*.*'],
     lib_js: wiredep().js,

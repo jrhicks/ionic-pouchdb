@@ -11,12 +11,12 @@ angular.module('app', [
                        'ngStorage',
                        // Components
                        'app.pouch',
-                       'app.pouch_watcher',
-                       'app.pouch_sync',
+                       'app.pouch_publisher',
                        // Controllers
                        'app.tabs_controller',
                        'app.todos_controller',
                        'app.accounts_controller',
+                       'app.info_controller',
                        // Models
                        'app.todo',
                        'app.account'

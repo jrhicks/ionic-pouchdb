@@ -8,23 +8,23 @@ angular.module('app.accounts_controller', [])
                 url: '/account/index',
                 views: {
                     'account-tab': {
-                        templateUrl: 'views/account/index.html',
+                        templateUrl: 'states/account/index.html',
                         controller: 'AccountIndexCtrl'
                     }
                 }
             })
     })
 
-    .controller('AccountIndexCtrl', function ($scope, $stateParams,  $timeout, $ionicLoading, $localStorage, Pouch, PouchSync) {
+    .controller('AccountIndexCtrl', function ($scope, $stateParams,  $timeout, $ionicLoading, $localStorage, Pouch) {
         $scope.account = $localStorage.account;
-        $scope.pouchSync = PouchSync;
+        $scope.Pouch = Pouch;
 
         $scope.save = function(account) {
             $ionicLoading.show({template: 'Saving Settings <i class="ion-loading-c" />'});
             $localStorage.account = account;
 
             $timeout(function() {
-                    PouchSync.connect();
+                    Pouch.connect();
                     $ionicLoading.hide();
                 },
                 300);
