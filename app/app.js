@@ -15,11 +15,9 @@ angular.module('app', [
                        // Controllers
                        'app.tabs_controller',
                        'app.todos_controller',
-                       'app.accounts_controller',
-                       'app.info_controller',
+                       'app.pouch_controller',
                        // Models
-                       'app.todo',
-                       'app.account'
+                       'app.todo'
     ])
 
     .run(function($ionicPlatform) {

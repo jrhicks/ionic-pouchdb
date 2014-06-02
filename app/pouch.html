@@ -1,0 +1,70 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-animate.js"></script>
+    <script src="/lib/angular-sanitize.js"></script>
+    <script src="/lib/pouchdb-nightly.js"></script>
+    <script src="/components/services/pouch.js"></script>
+
+<script type="text/javascript">
+
+    angular.module('app', [])
+            .controller("InfoIndexCtrl", function ($scope) {
+            var localdb = new PouchDB("LocalDB");
+            var changesdb = new PouchDB("ChangesDB");
+
+            $scope.results = {};
+            $scope.present = JSON.stringify;
+
+            localdb.info()
+                .then(function(info) {
+                    $scope.db_info = info;
+                });
+
+            changesdb.info()
+                    .then(function(info) {
+                        $scope.changesdb_info = info;
+                    });
+
+            var q = function(doc) {
+                if (doc.db==="replication_to") {
+                    emit(doc.created_at, doc._id);
+                }
+            };
+
+            changesdb.query(q, {descending: true, include_docs : true})
+                .then(function(results) {
+                    $scope.total_rows = results["total_rows"]
+                    $scope.data = results["rows"];
+                    console.log(JSON.stringify($scope.data[0]),undefined,4);
+                    $scope.$digest();
+                });
+
+        });
+</script>
+
+</head>
+
+
+
+<body>
+<h1>Database Information</h1>
+<div ng-controller="InfoIndexCtrl">
+
+    <h2>LocalDB</h2>
+    <div>
+        <pre>{{present(db_info, undefined, 4)}}</pre>
+    </div>
+    <h2>ChangesDB</h2>
+    <div>
+        <pre>{{present(changesdb_info, undefined, 4)}}</pre>
+    </div>
+    <h3>Changes</h3>
+    <div ng-repeat="d in data">
+        <pre>{{present(d.doc, undefined, 4)}}</pre>
+    </div>
+
+</div>
+</body>
+</html>

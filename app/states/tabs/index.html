@@ -5,13 +5,8 @@
     </ion-tab>
 
 
-    <ion-tab title="{{accountIcon()}}" icon-on="{{accountIcon()}}" icon-off="{{accountIcon()}}" href="#/tabs/account/index">
-        <ion-nav-view name="account-tab"></ion-nav-view>
-    </ion-tab>
-
-
-    <ion-tab title="Sync Info" icon-on="ion-information-circled" icon-off="ion-information-circled" href="#/tabs/info/index">
-            <ion-nav-view name="info-tab"></ion-nav-view>
+    <ion-tab title="{{pouchSyncInfo.local_changes}}" href="#/tabs/pouch/index">
+        <ion-nav-view name="pouch-tab"></ion-nav-view>
     </ion-tab>
 
 

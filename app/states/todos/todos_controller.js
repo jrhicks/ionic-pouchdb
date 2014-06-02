@@ -24,24 +24,36 @@ angular.module('app.todos_controller', [])
             })
     })
 
-    .controller('TodosIndexCtrl', function ($scope, Todo, PouchPublisher) {
+    .controller('TodosIndexCtrl', function ($scope, Todo, PouchPublisher, Pouch) {
         var self = this;
 
         self.form = {};
         self.todos = [];
         self.loading = true;
+        self.refreshing = false;
 
-        PouchPublisher.use( function() {
-            Todo.all()
-                .then(function(results) {
+        var allTodos = function(doc, emit) {
+            if (doc.doc_type === 'todo') {
+                emit(doc.created_at, doc._id);
+            }
+        }
+
+        PouchPublisher.use(function() {
+            if(self.refreshing === false)
+            {
+                self.refreshing = true;
+                Pouch.db.query(allTodos, {descending: true, include_docs : true}).then( function(results) {
                     self.loading = false;
                     self.todos = results["rows"];
                     $scope.$digest();
+                    self.refreshing=false;
                 });
-        });
+            }
+        })
 
         this.add = function (form) {
             Todo.add(form);
+            self.loading = true;
             self.form = {};
         };
 

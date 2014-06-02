@@ -1,4 +1,4 @@
-<ion-view title="Account">
+<ion-view title="Pouch">
 
     <ion-content class="has-header">
 
@@ -47,12 +47,22 @@
 
         </div>
 
-        <div class="card" ng-if="pouchSync.isConnected()">
-            Connected
+        <div class="card" ng-if="true">
+            <div class="item item-divider">
+                Sync Info
+            </div>
+            <div class="item item-text-wrap">
+                Information about sync.
+            </div>
+            <div class="item">
+                <pre>{{present(sync_info, undefined, 4)}}</pre>
+            </div>
         </div>
 
-        <div class="card">
-            Is Connected: {{pouchSync.isConnected()}}
+        <div class="card" ng-if="true">
+            <div class="item item-divider">
+                <button class="button" ng-click="reset()">RESET DB</button>
+            </div>
         </div>
 
     </ion-content>

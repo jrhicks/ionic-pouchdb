@@ -9,7 +9,9 @@ angular.module('app.tabs_controller', [])
                 templateUrl: 'states/tabs/index.html'
             })
     })
-    .controller('TabsController', function ($scope, Pouch) {
+    .controller('TabsController', function ($scope, Pouch, PouchPublisher, $localStorage) {
+        $scope.pouchSyncInfo = $localStorage.pouchSyncInfo;
+
         $scope.accountIcon = function() {
             if (Pouch.isConnected()) {
                 return "ion-ios7-checkmark-outline"

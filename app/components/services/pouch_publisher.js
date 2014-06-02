@@ -3,6 +3,7 @@
 angular.module('app.pouch_publisher', [])
     .service('PouchPublisher', function(Pouch) {
         return {
+
             cancel: function() {
                 if(this.changes != undefined) {
                     if(this.changes.cancel != undefined)
