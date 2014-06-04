@@ -2,3 +2,32 @@
     text-decoration: line-through;
     color: grey;
 }
+
+.greyed-out {
+    color: #eeeeee;
+    background-color: #eeeeee;
+}
+
+.fade-in .animate-item.ng-enter,
+.fade-in .animate-item.ng-leave.ng-leave-active {
+    opacity: 0.0;
+    transition: 300ms ease-in all;
+}
+.fade-in .animate-item.ng-enter.ng-enter-active,
+.fade-in .animate-item.ng-leave {
+    opacity:1.0;
+    transition: 300ms ease-in all;
+}
+
+
+.slide-left .animate-item.ng-enter,
+.slide-left .animate-item.ng-leave.ng-leave-active {
+    left: 500px;
+    transition: 300ms ease-in all;
+}
+.slide-left .animate-item.ng-enter.ng-enter-active,
+.slide-left .animate-item.ng-leave {
+    left: 0;
+    transition: 300ms ease-in all;
+}
+

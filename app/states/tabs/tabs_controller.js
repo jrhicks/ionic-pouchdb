@@ -9,14 +9,7 @@ angular.module('app.tabs_controller', [])
                 templateUrl: 'states/tabs/index.html'
             })
     })
-    .controller('TabsController', function ($scope, Pouch, PouchPublisher, $localStorage) {
-        $scope.pouchSyncInfo = $localStorage.pouchSyncInfo;
 
-        $scope.accountIcon = function() {
-            if (Pouch.isConnected()) {
-                return "ion-ios7-checkmark-outline"
-            } else {
-                return "ion-ios7-circle-outline"
-            }
-        }
+    .controller('TabsController', function ($scope, Pouch) {
+        $scope.pouch = Pouch;
     });

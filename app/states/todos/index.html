@@ -13,11 +13,15 @@
             </div>
         </div>
 
-        <div class="card" ng-if="todosIndex.loading">
-            Loading ...
-        </div>
 
-        <ion-list>
+        <ion-list ng-if="todosIndex.loading">
+            <ion-item class="item" ng-repeat='t in ["###############","###########","##############","############","#######"]'>
+                <span class="greyed-out">{{t}}</span>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list class="{{todosIndex.animationMethod}}">
             <ion-item href="#/tabs/todos/edit/{{todo.id}}" class="item animate-item" ng-repeat="todo in todosIndex.todos track by todo.id">
              <span class="todo-done-{{todo.doc.isComplete}}">
                  {{todo.doc.title}}

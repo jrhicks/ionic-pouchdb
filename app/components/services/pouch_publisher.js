@@ -4,6 +4,8 @@ angular.module('app.pouch_publisher', [])
     .service('PouchPublisher', function(Pouch) {
         return {
 
+            in_progress: false,
+
             cancel: function() {
                 if(this.changes != undefined) {
                     if(this.changes.cancel != undefined)
@@ -14,18 +16,31 @@ angular.module('app.pouch_publisher', [])
             },
 
             use: function(f) {
-                // Cancel previous change watchers
-                // Run the function immediately and on database change
-                var controlHelper = this;
-                f();
+                // Cancel previous publishers from other controllers
+                // Run the function immediately and then again on database changes
+                // Prevent from getting called while in progress
+
+                var self = this;
+                self.in_progress = false;
+
+                var runFn = function(info) {
+                    if (self.in_progress === false) {
+                        self.in_progress = true;
+                        f().then(function() {
+                            self.in_progress=false;
+                        })
+                    }
+                }
+                runFn();
+
                 Pouch.db.info(function(err, info) {
-                    controlHelper.cancel();
-                    controlHelper.changes = Pouch.db.changes({
+                    self.cancel();
+                    self.changes = Pouch.db.changes({
                         since: info.update_seq,
                         live: true
-                    }).on('change', f);
+                    }).on('change', runFn);
                 });
-            },
+            }
 
         }
     });

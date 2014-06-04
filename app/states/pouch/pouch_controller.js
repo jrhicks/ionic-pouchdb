@@ -16,29 +16,25 @@ angular.module('app.pouch_controller', [])
     })
 
     .controller('PouchIndexCtrl', function ($scope, $stateParams,  $timeout, $ionicLoading, Pouch) {
-        $scope.account = Pouch.getRemoteAccount();
+        $scope.settings = Pouch.settings;
         $scope.Pouch = Pouch;
-
-        $scope.present = JSON.stringify;
-        $scope.sync_info = Pouch.getInfo();
 
         $scope.reset = function() {
             Pouch.reset()
                 .then(function() {
-                    $scope.digest();
+                    $ionicLoading.show({template: 'You should restart the app.'});
                 })
         };
 
-        $scope.save = function(account) {
-            $ionicLoading.show({template: 'Saving Settings <i class="ion-loading-c" />'});
-            Pouch.setRemoteAccount(account);
-
-            $timeout(function() {
-                    Pouch.connect();
-                    $ionicLoading.hide();
-                },
-                300);
-
+        $scope.save = function(settings) {
+            //$ionicLoading.show({template: 'Saving Settings <i class="ion-loading-c" />'});
+            alert(JSON.stringify(settings));
+            Pouch.saveSettings(settings);
+            //$timeout(function() {
+            //        Pouch.connect();
+            //        $ionicLoading.hide();
+            //    },
+            //    300);
         };
     });
 

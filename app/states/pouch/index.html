@@ -1,38 +1,62 @@
-<ion-view title="Pouch">
+<ion-view title="Data Service">
 
     <ion-content class="has-header">
 
-        <ion-nav-buttons side="right" class="if-animate" ng-if="account.username == null">
-            <a class="button" href="#welcome/account/signup">Sign Up!</a>
-        </ion-nav-buttons>
-
         <div class="card" ng-if="true">
             <div class="item item-divider">
-                Account Settings
+                Status
             </div>
-            <div class="item item-text-wrap">
-                Configure your account settings to enable syncing todos with an online account.
+
+            <label class="item item-input">
+                <span class="input-label">Connection</span>
+                <i class="{{pouch.statusIcon()}}"></i>  &nbsp; {{pouch.statusTitle()}}
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Local Changes</span>
+                {{pouch.localChanges}}
+            </label>
+
+            <div ng-if="false">
+            <label class="item item-input">
+                <span class="input-label">Records Sent</span>
+                {{pouch.docsSent}}
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Records Received</span>
+                {{pouch.docsReceived}}
+            </label>
+            </div>
+
+
+
+
+        </div>
+        <div class="card" ng-if="true">
+            <div class="item item-divider">
+                Settings
             </div>
 
             <label class="item item-input">
                 <span class="input-label">Database</span>
-                <input type="text" ng-model="account.database">
+                <input type="text" ng-model="settings.database">
             </label>
 
 
             <label class="item item-input">
                 <span class="input-label">Username</span>
-                <input type="text" ng-model="account.username">
+                <input type="text" ng-model="settings.username">
             </label>
             <label class="item item-input">
                 <span class="input-label">Password</span>
-                <input type="password" ng-model="account.password">
+                <input type="password" ng-model="settings.password">
             </label>
 
             <label class="item item-input">
                 <span class="input-label">Stay Connected</span>
                 <label class="toggle">
-                    <input type="checkbox" ng-model="account.stayConnected">
+                    <input type="checkbox" ng-model="settings.stayConnected">
                     <div class="track">
                         <div class="handle"></div>
                     </div>
@@ -40,29 +64,11 @@
             </label>
 
             <label class="item">
-                <button class="button button-block button-stable" ng-click="save(account)">
+                <button class="button button-block button-stable" ng-click="save(settings)">
                     Save Settings
                 </button>
             </label>
 
-        </div>
-
-        <div class="card" ng-if="true">
-            <div class="item item-divider">
-                Sync Info
-            </div>
-            <div class="item item-text-wrap">
-                Information about sync.
-            </div>
-            <div class="item">
-                <pre>{{present(sync_info, undefined, 4)}}</pre>
-            </div>
-        </div>
-
-        <div class="card" ng-if="true">
-            <div class="item item-divider">
-                <button class="button" ng-click="reset()">RESET DB</button>
-            </div>
         </div>
 
     </ion-content>
