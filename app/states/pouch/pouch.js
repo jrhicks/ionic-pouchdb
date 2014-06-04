@@ -57,7 +57,14 @@ angular.module('app.pouch', [])
              */
 
             incrementLocalChanges: function() {
-                this.status.localChanges++;
+                if( typeof this.statusLocalChanges === "Integer")
+                {
+                    this.status.localChanges++;
+                } else {
+                    this.status.localChanges = 1;
+                }
+
+
                 this.persistStatus();
             },
 
@@ -90,7 +97,7 @@ angular.module('app.pouch', [])
             },
 
             loadStatus: function() {
-                this.status = $localStorage.pouchStatus;
+                this.status = $localStorage.pouchStatus || {localChanges: 0}
             },
 
             /*
@@ -101,18 +108,14 @@ angular.module('app.pouch', [])
                 return this.settings;
             },
 
-            getStatus: function() {
-                return this.status;
-            },
-
-            getSession: function() {
-                return this.session;
-            },
-
             saveSettings: function(settings) {
                 this.settings = settings;
                 $localStorage.pouchSettings = settings;
 
+            },
+
+            localChanges: function() {
+                return this.status.localChanges;
             },
 
             statusIcon: function() {
@@ -187,19 +190,23 @@ angular.module('app.pouch', [])
             },
 
             trackChanges: function() {
+                console.log("track changes");
                 var self = this;
                 if (typeof self.session.changes === "Promise") {
                     self.session.changes.cancel();
                 }
-                self.db.info(function(err, info) {
-                    self.session.changes = self.db.changes({
-                        since: info.update_seq,
-                        live: true
-                    })
-                        .on('change', function(info) {self.handleChanges(info, "change")} )
-                        .on('error', function(info) {self.handleChanges(info, "error")})
-                        .on('complete', function(info) {self.handleChanges(info, "complete")})
+                self.db.info()
+                    .then( function(info) {
+                        console.log("track changes 2" + JSON.stringify(info));
+                        self.session.changes = self.db.changes({
+                            since: info.update_seq,
+                            live: true
+                        })
+                            .on('change', function(info) {self.handleChanges(info, "change")} )
+                            .on('error', function(info) {self.handleChanges(info, "error")})
+                            .on('complete', function(info) {self.handleChanges(info, "complete")})
                 });
+
             },
 
             createRemoteDb: function() {
@@ -211,6 +218,7 @@ angular.module('app.pouch', [])
             },
 
             handleChanges: function(info, event) {
+                console.log("handleChanges");
                 var self = this;
                 info.event = event;
                 info.occurred_at = new Date();
@@ -238,8 +246,8 @@ angular.module('app.pouch', [])
                         self.delayStatus(800, "offline");
                         break;
                     case "change":
-                        if(info.docs_written > self.docsReceived){
-                            self.docsReceived = info.docs_written;
+                        if(info.docs_written > self.session.docsReceived){
+                            self.session.docsReceived = info.docs_written;
                             self.setSessionStatus("receiving");
                         }
                         break
@@ -262,8 +270,8 @@ angular.module('app.pouch', [])
                         self.delayStatus(800, "offline");
                         break;
                     case "change":
-                        if(info.docs_written > self.docsSent){
-                            self.docsSent = info.docs_written;
+                        if(info.docs_written > self.session.docsSent){
+                            self.session.docsSent = info.docs_written;
                             self.setSessionStatus("sending");
                         }
                         break

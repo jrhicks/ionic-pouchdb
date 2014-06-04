@@ -20,21 +20,18 @@ angular.module('app.pouch_controller', [])
         $scope.Pouch = Pouch;
 
         $scope.reset = function() {
-            Pouch.reset()
-                .then(function() {
-                    $ionicLoading.show({template: 'You should restart the app.'});
-                })
+            $ionicLoading.show({template: 'You should restart the app.'});
+            Pouch.reset();
         };
 
         $scope.save = function(settings) {
-            //$ionicLoading.show({template: 'Saving Settings <i class="ion-loading-c" />'});
-            alert(JSON.stringify(settings));
+            $ionicLoading.show({template: 'Saving Settings <i class="ion-loading-c" />'});
             Pouch.saveSettings(settings);
-            //$timeout(function() {
-            //        Pouch.connect();
-            //        $ionicLoading.hide();
-            //    },
-            //    300);
+            $timeout(function() {
+                    Pouch.connect();
+                    $ionicLoading.hide();
+                },
+                300);
         };
     });
 

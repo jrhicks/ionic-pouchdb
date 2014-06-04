@@ -14,20 +14,9 @@
 
             <label class="item item-input">
                 <span class="input-label">Local Changes</span>
-                {{pouch.localChanges}}
+                {{pouch.localChanges()}}
             </label>
 
-            <div ng-if="false">
-            <label class="item item-input">
-                <span class="input-label">Records Sent</span>
-                {{pouch.docsSent}}
-            </label>
-
-            <label class="item item-input">
-                <span class="input-label">Records Received</span>
-                {{pouch.docsReceived}}
-            </label>
-            </div>
 
 
 
@@ -69,7 +58,39 @@
                 </button>
             </label>
 
+            <label class="item">
+                <button class="button button-block button-stable" ng-click="reset()">
+                    RESET DATABASE
+                </button>
+            </label>
+
         </div>
+
+        <div class="card" ng-if="true">
+            <div class="item item-divider">
+                Settings
+            </div>
+
+            <label class="item">
+                <pre>{{pouch.settings | json}}</pre>
+            </label>
+
+            <div class="item item-divider">
+                Status
+            </div>
+
+            <label class="item">
+                <pre>{{pouch.status | json}}</pre>
+            </label>
+
+            <div class="item item-divider">
+                Session
+            </div>
+
+            <label class="item">
+                <pre>{{pouch.session | json}}</pre>
+            </label>
+
 
     </ion-content>
 </ion-view>
