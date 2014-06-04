@@ -19,9 +19,9 @@ angular.module('app.pouch', [])
             // Persistent Status
             status: {
                 localChanges: 0,
-                lastChanges: {},
-                lastReplicationTo: {},
-                lastReplicationFrom: {}
+                changeEvents: {},
+                replicationToEvents: {},
+                replicationFromEvents: {}
             },
 
             // Session Status
@@ -30,12 +30,14 @@ angular.module('app.pouch', [])
                 status: "offline",
                 docsSent: 0,
                 docsReceived: 0,
-                // Session Promises & Even Emitters
-                changes: undefined,
-                replicationTo: undefined,
-                replicationFrom: undefined,
-                delayStatusPromise: undefined
             },
+
+            // SPromises & Even Emitters
+            changes: undefined,
+            replicationTo: undefined,
+            replicationFrom: undefined,
+            delayStatusPromise: undefined,
+
 
             /*
              *  Initializers
@@ -73,19 +75,35 @@ angular.module('app.pouch', [])
                 this.persistStatus();
             },
 
-            setLastChanges: function(value) {
-                this.status.lastChanges = value;
-                this.persistStatus();
+            storeChangeEvent: function(value, event) {
+                var self = this;
+                if( typeof self.status.changeEvents === "undefined")
+                {
+                    self.status.changeEvents = {}
+                }
+                self.status.changeEvents[event] = value;
+                self.persistStatus();
             },
 
-            setLastReplicationTo: function(value) {
-                this.status.lastReplicationTo = value;
-                this.persistStatus();
+            storeReplicationToEvent: function(value, event) {
+                var self = this;
+                if( typeof self.status.replicationToEvents === "undefined")
+                {
+                    self.status.replicationToEvents = {}
+                }
+
+                self.status.replicationToEvents[event] = value;
+                self.persistStatus();
             },
 
-            setLastReplicationFrom: function(value) {
-                this.status.lastReplicationFrom = value;
-                this.persistStatus();
+            storeReplicationFromEvent: function(value, event) {
+                var self = this;
+                if( typeof self.status.replicationFromEvents === "undefined")
+                {
+                    self.status.replicationFromEvents = {}
+                }
+                self.status.replicationFromEvents[event] = value;
+                self.persistStatus();
             },
 
             persistStatus: function() {
@@ -93,11 +111,15 @@ angular.module('app.pouch', [])
             },
 
             loadSettings: function() {
-                this.settings = $localStorage.pouchSettings;
+                if (typeof $localStorage.pouchSettings !== undefined) {
+                    this.settings = $localStorage.pouchSettings
+                }
             },
 
             loadStatus: function() {
-                this.status = $localStorage.pouchStatus || {localChanges: 0}
+                if (typeof $localStorage.pouchStatus !== undefined) {
+                    this.status = $localStorage.pouchStatus
+                }
             },
 
             /*
@@ -175,7 +197,7 @@ angular.module('app.pouch', [])
 
             delaySessionStatus: function(delay, status) {
                 var self = this;
-                self.session.delayStatusPromise = $timeout(
+                self.delayStatusPromise= $timeout(
                     function() {
                           self.setSessionStatus(status);
                          },delay);
@@ -183,22 +205,21 @@ angular.module('app.pouch', [])
 
             cancelSessionStatus: function() {
                 var self = this;
-                if(typeof self.session.delayStatusPromise === "Promise")
+                if(typeof delayStatusPromise=== "object")
                 {
-                    self.session.delayStatusPromise.cancel();
+                    self.delayStatusPromise.cancel();
                 }
             },
 
             trackChanges: function() {
                 console.log("track changes");
                 var self = this;
-                if (typeof self.session.changes === "Promise") {
-                    self.session.changes.cancel();
+                if (typeof self.changes === "object") {
+                    self.changes.cancel();
                 }
                 self.db.info()
                     .then( function(info) {
-                        console.log("track changes 2" + JSON.stringify(info));
-                        self.session.changes = self.db.changes({
+                        self.changes = self.db.changes({
                             since: info.update_seq,
                             live: true
                         })
@@ -209,20 +230,11 @@ angular.module('app.pouch', [])
 
             },
 
-            createRemoteDb: function() {
-                var self = this;
-                if (typeof self.settings.database === "String")
-                {
-                    self.remotedb = new PouchDB(this.settings.database);
-                }
-            },
-
             handleChanges: function(info, event) {
                 console.log("handleChanges");
                 var self = this;
-                info.event = event;
                 info.occurred_at = new Date();
-                self.setLastChanges(info);
+                self.storeChangeEvent(info, event);
                 if (event === "change") {
                     self.incrementLocalChanges();
                     $rootScope.$apply();
@@ -231,19 +243,19 @@ angular.module('app.pouch', [])
             },
 
             handleReplicationFrom: function(info, event) {
+                console.log("handleReplicationFrom");
                 var self = this;
-                info.event = event;
                 info.occurred_at = new Date();
-                self.setLastReplicationFrom(info);
+                self.storeReplicationFromEvent(info, event);
                 switch (event) {
                     case "uptodate":
-                        self.delayStatus(800, "idle");
+                        self.delaySessionStatus(800, "idle");
                         break;
                     case "error":
-                        self.delayStatus(800, "offline");
+                        self.delaySessionStatus(800, "offline");
                         break;
                     case "complete":
-                        self.delayStatus(800, "offline");
+                        self.delaySessionStatus(800, "offline");
                         break;
                     case "change":
                         if(info.docs_written > self.session.docsReceived){
@@ -256,18 +268,18 @@ angular.module('app.pouch', [])
             },
 
             handleReplicationTo: function(info, event) {
+                console.log("handleReplicationTo");
                 var self = this;
-                info.event = event;
                 switch (event) {
                     case "uptodate":
                         self.resetLocalChanges();
-                        self.delayStatus(800, "idle");
+                        self.delaySessionStatus(800, "idle");
                         break;
                     case "error":
-                        self.delayStatus(800, "offline");
+                        self.delaySessionStatus(800, "offline");
                         break;
                     case "complete":
-                        self.delayStatus(800, "offline");
+                        self.delaySessionStatus(800, "offline");
                         break;
                     case "change":
                         if(info.docs_written > self.session.docsSent){
@@ -277,7 +289,7 @@ angular.module('app.pouch', [])
                         break
                 }
                 info.occurred_at = new Date();
-                this.setLastReplicationTo(info);
+                this.storeReplicationToEvent(info, event);
                 $rootScope.$apply();
             },
 
@@ -285,12 +297,20 @@ angular.module('app.pouch', [])
             // Disconnect from Remote Database
             disconnect: function() {
                 var self = this;
-                if(typeof self.session.replicationTo === "Promise") {
-                    self.session.replicationTo.cancel();
+                if(typeof self.replicationTo === "object") {
+                    self.replicationTo.cancel();
                 }
 
-                if(typeof self.session.replicationFrom === "Promise") {
-                        self.session.replicationFrom.cancel();
+                if(typeof self.replicationFrom === "object") {
+                        self.replicationFrom.cancel();
+                }
+            },
+
+            createRemoteDb: function() {
+                var self = this;
+                if (typeof self.settings.database === "string")
+                {
+                    self.remotedb = new PouchDB(this.settings.database);
                 }
             },
 
@@ -301,33 +321,34 @@ angular.module('app.pouch', [])
                 self.session.docsReceived = 0;
                 this.disconnect();
                 this.createRemoteDb();
+
                 this.session.replicationTo = this.db.replicate.to(this.remotedb, {live: true})
-                    .on('change', function(info)   {p.handleReplicationTo(info, "change")})
-                    .on('uptodate', function(info) {p.handleReplicationTo(info, "uptodate")})
-                    .on('error', function(info)    {p.handleReplicationTo(info, "error")})
-                    .on('complete', function(info) {p.handleReplicationTo(info, "complete")});
+                    .on('change', function(info)   {self.handleReplicationTo(info, "change")})
+                    .on('uptodate', function(info) {self.handleReplicationTo(info, "uptodate")})
+                    .on('error', function(info)    {self.handleReplicationTo(info, "error")})
+                    .on('complete', function(info) {self.handleReplicationTo(info, "complete")});
 
                 this.session.replicationFrom = this.db.replicate.from(this.remotedb, {live: true})
-                    .on('change', function(info)   {p.handleReplicationFrom(info, "change")})
-                    .on('uptodate', function(info) {p.handleReplicationFrom(info, "uptodate")})
-                    .on('error', function(info)    {p.handleReplicationFrom(info, "error")})
-                    .on('complete', function(info) {p.handleReplicationFrom(info, "complete")});
+                    .on('change', function(info)   {self.handleReplicationFrom(info, "change")})
+                    .on('uptodate', function(info) {self.handleReplicationFrom(info, "uptodate")})
+                    .on('error', function(info)    {self.handleReplicationFrom(info, "error")})
+                    .on('complete', function(info) {self.handleReplicationFrom(info, "complete")});
             },
 
 
             // Test if connection is still working
             isConnected: function() {
                 var self = this;
-                if (typeof self.session.replicationTo === "undefined") {
+                if (typeof self.replicationTo === "undefined") {
                     return false;
                 }
-                if (typeof self.session.replicationFrom === "undefined") {
+                if (typeof self.replicationFrom === "undefined") {
                     return false;
                 }
-                if (self.session.replicationTo.cancelled) {
+                if (self.replicationTo.cancelled) {
                     return false;
                 }
-                if (self.session.replicationFrom.cancelled) {
+                if (self.replicationFrom.cancelled) {
                     return false;
                 }
                 return true;
