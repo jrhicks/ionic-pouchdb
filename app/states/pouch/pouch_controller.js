@@ -28,7 +28,6 @@ angular.module('app.pouch_controller', [])
             $ionicLoading.show({template: 'Saving Settings <i class="ion-loading-c" />'});
             Pouch.saveSettings(settings);
             $timeout(function() {
-                    Pouch.attemptConnection();
                     $ionicLoading.hide();
                 },
                 300);

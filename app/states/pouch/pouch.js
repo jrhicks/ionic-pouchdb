@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app.pouch', [])
-    .service('Pouch', function($rootScope, $timeout, $interval,  $localStorage) {
+    .service('Pouch', function($rootScope, $timeout, $interval,  $localStorage, rfc4122) {
 
         var service =  {
             // Databases
@@ -55,7 +55,7 @@ angular.module('app.pouch', [])
 
                 // Start Session
                 this.trackChanges();
-                this.initRobustSync();
+                this.initRobustSync(1000);
             },
 
 
@@ -138,11 +138,18 @@ angular.module('app.pouch', [])
             saveSettings: function(settings) {
                 this.settings = settings;
                 $localStorage.pouchSettings = settings;
+                this.initRobustSync(1000);
 
             },
 
             localChanges: function() {
-                return this.status.localChanges;
+                if (typeof this.status === "undefined")
+                {
+                    return "undefined";
+                } else
+                {
+                    return this.status.localChanges;
+                }
             },
 
             attemptConnection: function() {
@@ -155,10 +162,12 @@ angular.module('app.pouch', [])
 
             statusIcon: function() {
                 switch(this.session.status) {
+                    case "connecting":
+                        return "ion-ios7-cloudy-night-outline"
                     case "online":
                         return "ion-ios7-cloud-outline";
                     case "offline":
-                        return "ion-ios7-cloudy-night-outline";
+                        return "ion-ios7-cloudy-night";
                     case "idle":
                         return "ion-ios7-cloud-outline";
                     case "receiving":
@@ -175,9 +184,9 @@ angular.module('app.pouch', [])
                     case "online":
                         return "Connected";
                     case "connecting":
-                        return "Trying to connect"
+                        return "Trying to connect";
                     case "offline":
-                        return "Disconnected";
+                        return "Not connected";
                     case "idle":
                         return "Connected";
                     case "receiving":
@@ -205,50 +214,68 @@ angular.module('app.pouch', [])
              */
 
 
-            initRobustSync: function() {
-              var self = this;
-              if (self.settings.stayConnected === true) {
-                self.progressiveRetry();
-              }
+            initRobustSync: function(delay) {
+                var self = this;
+                console.log("initRobustSync");
+                self.session.currentRetryDelay = delay;
+                self.cancelProgressiveRetry();
+
+                if (self.settings.stayConnected === true) {
+                    self.progressiveRetry();
+                }
+            },
+
+            maxOutProgressiveDelay: function() {
+                this.initRobustSync(this.session.maxRetryDelay);
+            },
+
+            restartProgressiveDelay: function() {
+                if (this.session.status !== "connecting" &&
+                    this.session.status !== "offline")
+                {
+                    this.initRobustSync(1000);
+                }
             },
 
             cancelProgressiveRetry: function() {
-              var self = this;
-              if (typeof self.retryPromise === "object") {
-                  $interval.cancel( self.retryPromose );
-              }
+                var self = this;
+                if (typeof self.retryPromise === "object") {
+                    $interval.cancel(self.retryPromise);
+                }
             },
 
             progressiveRetry: function() {
                 var self = this;
                 if (self.session.currentRetryDelay < self.session.maxRetryDelay)
                 {
-                    self.session.currentRetryDelay = self.sessionRetryDelay + self.session.retryDelayInc;
+                    console.log("Progress Delay");
+                    self.session.currentRetryDelay = self.session.currentRetryDelay + self.session.retryDelayInc;
                 }
 
                 self.retryPromise = $interval( function() {
-                    self.attemptConnection()
+                    self.progressiveRetry();
+                    self.attemptConnection();
                     }, self.session.currentRetryDelay, 1, false)
-                        .then(function(){},
-                              function(){self.progressiveRetry()})
             },
 
             flashSessionStatus: function(status) {
                 var self = this;
                 var s = self.session.status;
-                this.setSessionStatus(status);
-                this.delaySessionStatus(s);
-                $rootScope.$digest();
+                self.setSessionStatus(status);
+                self.delaySessionStatus(2000, s);
             },
 
             setSessionStatus: function(status) {
-              this.cancelSessionStatus();
-              this.session.status = status;
-              $rootScope.$digest();
+                var self = this;
+                self.cancelSessionStatus();
+                $timeout(function() {
+                    self.session.status = status;
+                })
             },
 
             delaySessionStatus: function(delay, status) {
                 var self = this;
+                self.cancelSessionStatus();
                 self.delayStatusPromise= $timeout(
                     function() {
                           self.setSessionStatus(status);
@@ -256,10 +283,12 @@ angular.module('app.pouch', [])
             },
 
             cancelSessionStatus: function() {
+                console.log("Cancel Delay Status");
                 var self = this;
-                if(typeof delayStatusPromise=== "object")
+                if (typeof self.delayStatusPromise === "object")
                 {
-                    self.delayStatusPromise.cancel();
+                    console.log("Cancel Delay Status Occurred");
+                    $timeout.cancel(self.delayStatusPromise);
                 }
             },
 
@@ -301,15 +330,19 @@ angular.module('app.pouch', [])
                 self.storeReplicationFromEvent(info, event);
                 switch (event) {
                     case "uptodate":
+                        self.maxOutProgressiveDelay();
                         self.delaySessionStatus(800, "idle");
                         break;
                     case "error":
+                        self.restartProgressiveDelay();
                         self.delaySessionStatus(800, "offline");
                         break;
                     case "complete":
-                        self.delaySessionStatus(800, "offline");
+                        //self.restartProgressiveDelay();
+                        //self.delaySessionStatus(800, "offline");
                         break;
                     case "change":
+                        self.maxOutProgressiveDelay();
                         if(info.docs_written > self.session.docsReceived){
                             self.session.docsReceived = info.docs_written;
                             self.setSessionStatus("receiving");
@@ -324,16 +357,20 @@ angular.module('app.pouch', [])
                 var self = this;
                 switch (event) {
                     case "uptodate":
+                        self.maxOutProgressiveDelay();
                         self.resetLocalChanges();
                         self.delaySessionStatus(800, "idle");
                         break;
                     case "error":
+                        self.restartProgressiveDelay();
                         self.delaySessionStatus(800, "offline");
                         break;
                     case "complete":
-                        self.delaySessionStatus(800, "offline");
+                        //self.restartProgressiveDelay();
+                        //self.delaySessionStatus(800, "offline");
                         break;
                     case "change":
+                        self.maxOutProgressiveDelay();
                         if(info.docs_written > self.session.docsSent){
                             self.session.docsSent = info.docs_written;
                             self.setSessionStatus("sending");
@@ -366,21 +403,22 @@ angular.module('app.pouch', [])
                 }
             },
 
+
+
             // Connect to Remote Database and Start Replication
             connect: function() {
                 var self = this;
                 self.session.docsSent = 0;
                 self.session.docsReceived = 0;
-                this.disconnect();
-                this.createRemoteDb();
-
-                this.session.replicationTo = this.db.replicate.to(this.remotedb, {live: true})
+                self.disconnect();
+                self.createRemoteDb();
+                self.session.replicationTo = self.db.replicate.to(self.remotedb, {live: true})
                     .on('change', function(info)   {self.handleReplicationTo(info, "change")})
                     .on('uptodate', function(info) {self.handleReplicationTo(info, "uptodate")})
                     .on('error', function(info)    {self.handleReplicationTo(info, "error")})
                     .on('complete', function(info) {self.handleReplicationTo(info, "complete")});
 
-                this.session.replicationFrom = this.db.replicate.from(this.remotedb, {live: true})
+                self.session.replicationFrom = self.db.replicate.from(self.remotedb, {live: true})
                     .on('change', function(info)   {self.handleReplicationFrom(info, "change")})
                     .on('uptodate', function(info) {self.handleReplicationFrom(info, "uptodate")})
                     .on('error', function(info)    {self.handleReplicationFrom(info, "error")})
