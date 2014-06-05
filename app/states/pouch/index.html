@@ -63,6 +63,16 @@
         </div>
 
         <div class="card" ng-if="true">
+
+            <div class="item item-divider">
+                Session
+            </div>
+
+            <label class="item">
+                <pre>{{pouch.session | json}}</pre>
+            </label>
+
+
             <div class="item item-divider">
                 Settings
             </div>
@@ -78,6 +88,7 @@
             <label class="item">
                 <pre>{{pouch.status | json}}</pre>
             </label>
+        </div>
 
 
     </ion-content>

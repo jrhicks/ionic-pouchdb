@@ -30,6 +30,10 @@ angular.module('app.pouch', [])
                 status: "offline",
                 docsSent: 0,
                 docsReceived: 0,
+                currentRetryDelay: 10,
+                maxRetryDelay: 60*1000*10,
+                retryDelayInc: 1000,
+                lastConnectionAttempt: undefined
             },
 
             // SPromises & Even Emitters
@@ -37,7 +41,7 @@ angular.module('app.pouch', [])
             replicationTo: undefined,
             replicationFrom: undefined,
             delayStatusPromise: undefined,
-
+            retryPromise: undefined,
 
             /*
              *  Initializers
@@ -51,6 +55,7 @@ angular.module('app.pouch', [])
 
                 // Start Session
                 this.trackChanges();
+                this.initRobustSync();
             },
 
 
@@ -140,6 +145,14 @@ angular.module('app.pouch', [])
                 return this.status.localChanges;
             },
 
+            attemptConnection: function() {
+                var self = this;
+                self.session.lastConnectionAttempt = new Date();
+                self.flashSessionStatus("connecting");
+                self.connect();
+            },
+
+
             statusIcon: function() {
                 switch(this.session.status) {
                     case "online":
@@ -161,6 +174,8 @@ angular.module('app.pouch', [])
                 switch(this.session.status) {
                     case "online":
                         return "Connected";
+                    case "connecting":
+                        return "Trying to connect"
                     case "offline":
                         return "Disconnected";
                     case "idle":
@@ -189,9 +204,46 @@ angular.module('app.pouch', [])
              *  Private Methods
              */
 
+
+            initRobustSync: function() {
+              var self = this;
+              if (self.settings.stayConnected === true) {
+                self.progressiveRetry();
+              }
+            },
+
+            cancelProgressiveRetry: function() {
+              var self = this;
+              if (typeof self.retryPromise === "object") {
+                  $interval.cancel( self.retryPromose );
+              }
+            },
+
+            progressiveRetry: function() {
+                var self = this;
+                if (self.session.currentRetryDelay < self.session.maxRetryDelay)
+                {
+                    self.session.currentRetryDelay = self.sessionRetryDelay + self.session.retryDelayInc;
+                }
+
+                self.retryPromise = $interval( function() {
+                    self.attemptConnection()
+                    }, self.session.currentRetryDelay, 1, false)
+                        .then(function(){},
+                              function(){self.progressiveRetry()})
+            },
+
+            flashSessionStatus: function(status) {
+                var self = this;
+                var s = self.session.status;
+                this.setSessionStatus(status);
+                this.delaySessionStatus(s);
+                $rootScope.$digest();
+            },
+
             setSessionStatus: function(status) {
-              this.session.status = status;
               this.cancelSessionStatus();
+              this.session.status = status;
               $rootScope.$digest();
             },
 
