@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app.pouch_publisher', [])
-    .service('PouchPublisher', function(Pouch) {
+    .service('PouchPublisher', function(Pouch, $rootScope) {
         return {
 
             in_progress: false,
@@ -28,9 +28,11 @@ angular.module('app.pouch_publisher', [])
                         self.in_progress = true;
                         f().then(function() {
                             self.in_progress=false;
-                        })
+                            $rootScope.$apply();
+                        });
                     }
                 }
+
                 runFn();
 
                 Pouch.db.info(function(err, info) {

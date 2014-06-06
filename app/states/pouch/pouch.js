@@ -33,7 +33,8 @@ angular.module('app.pouch', [])
                 currentRetryDelay: 10,
                 maxRetryDelay: 60*1000*10,
                 retryDelayInc: 1000,
-                lastConnectionAttempt: undefined
+                lastConnectionAttempt: undefined,
+                publishInProgress: false
             },
 
             // SPromises & Even Emitters
@@ -42,6 +43,7 @@ angular.module('app.pouch', [])
             replicationFrom: undefined,
             delayStatusPromise: undefined,
             retryPromise: undefined,
+            publishPromise: undefined,
 
             /*
              *  Initializers
@@ -64,11 +66,12 @@ angular.module('app.pouch', [])
              */
 
             incrementLocalChanges: function() {
-                if( typeof this.statusLocalChanges === "Integer")
+                var self = this;
+                if( typeof self.status.localChanges === "number")
                 {
-                    this.status.localChanges++;
+                    self.status.localChanges++;
                 } else {
-                    this.status.localChanges = 1;
+                    self.status.localChanges = 1;
                 }
 
 

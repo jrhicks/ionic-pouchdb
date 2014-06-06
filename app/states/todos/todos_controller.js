@@ -35,12 +35,13 @@ angular.module('app.todos_controller', [])
             return Pouch.db.query('recentTodos', {descending: true, include_docs : true})
                 .then( function(results) {
                     self.loading = false;
+                    self.inserting = false;
                     self.todos = results["rows"];
-                    $scope.$digest();
                 });
         });
 
         this.add = function (form) {
+            self.inserting = form.title;
             Todo.add(form);
             self.form = {};
         };
@@ -49,13 +50,14 @@ angular.module('app.todos_controller', [])
     })
 
     .controller('TodosEditCtrl', function ($scope, $ionicNavBarDelegate, $stateParams, $ionicLoading,
-                                           Todo, Pouch) {
+                                           Todo, Pouch, $timeout) {
         $scope.todo = {};
 
         Pouch.db.get($stateParams.id)
             .then(function(result) {
-                $scope.todo = result;
-                $scope.$digest();
+                $timeout(function() {
+                    $scope.todo = result;
+                })
             });
 
         $scope.save = function(todo) {

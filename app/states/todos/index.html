@@ -14,9 +14,15 @@
         </div>
 
 
-        <ion-list ng-if="todosIndex.loading">
+        <ion-list ng-if="todosIndex.loading" class="animate-if">
             <ion-item class="item" ng-repeat='t in ["###############","###########","##############","############","#######"]'>
                 <span class="greyed-out">{{t}}</span>
+            </ion-item>
+        </ion-list>
+
+        <ion-list ng-if="todosIndex.inserting" class="animate-if">
+            <ion-item class="item">
+                <span class="greyed-out">{{todosIndex.inserting}}</span>
             </ion-item>
         </ion-list>
 
