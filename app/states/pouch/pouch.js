@@ -1,12 +1,16 @@
 'use strict';
 
 angular.module('app.pouch', [])
-    .service('Pouch', function($rootScope, $timeout, $interval,  $localStorage, rfc4122) {
+    .service('Pouch', function($rootScope, $timeout, $interval,  $localStorage) {
 
         var service =  {
             // Databases
             db: new PouchDB("LocalDB"),
             remotedb: undefined,
+
+            // Options
+            invokeApply: true,
+
 
             // Persistent Settings
             settings: {
@@ -73,8 +77,6 @@ angular.module('app.pouch', [])
                 } else {
                     self.status.localChanges = 1;
                 }
-
-
                 this.persistStatus();
             },
 
@@ -134,6 +136,43 @@ angular.module('app.pouch', [])
              *  Public Methods
              */
 
+
+            publish: function(f) {
+                // Cancel previous publishers from other controllers
+                // Run the function immediately and then again on database changes
+                // Prevent from getting called while in progress
+
+                var self = this;
+                self.session.publishInProgress = false;
+
+                var runFn = function(info) {
+                    if ( self.session.publishInProgress === false) {
+                        self.session.publishInProgress = true;
+                        f().then(function() {
+                            $timeout(function() {
+                                self.session.publishInProgressprogress=false;
+                            }, 0, self.invokeApply);
+                        });
+                    }
+                }
+
+                self.db.info(function(err, info) {
+                    if(typeof self.publishPromise !== "undefined") {
+                        if(typeof self.publishPromise.cancel !== "undefined")
+                        {
+                            self.publishPromise.cancel();
+                        }
+                    }
+
+                    self.publishPromise = self.db.changes({
+                        since: (info.update_seq-1),
+                        live: true
+                    }).on('change', runFn);
+                });
+
+                runFn();
+            },
+            
             getSettings: function() {
                 return this.settings;
             },
@@ -219,7 +258,6 @@ angular.module('app.pouch', [])
 
             initRobustSync: function(delay) {
                 var self = this;
-                console.log("initRobustSync");
                 self.session.currentRetryDelay = delay;
                 self.cancelProgressiveRetry();
 
@@ -251,7 +289,6 @@ angular.module('app.pouch', [])
                 var self = this;
                 if (self.session.currentRetryDelay < self.session.maxRetryDelay)
                 {
-                    console.log("Progress Delay");
                     self.session.currentRetryDelay = self.session.currentRetryDelay + self.session.retryDelayInc;
                 }
 
@@ -271,9 +308,9 @@ angular.module('app.pouch', [])
             setSessionStatus: function(status) {
                 var self = this;
                 self.cancelSessionStatus();
-                $timeout(function() {
-                    self.session.status = status;
-                })
+                    $timeout(function() {
+                        self.session.status = status;
+                    },0,self.invokeApply);
             },
 
             delaySessionStatus: function(delay, status) {
@@ -282,21 +319,19 @@ angular.module('app.pouch', [])
                 self.delayStatusPromise= $timeout(
                     function() {
                           self.setSessionStatus(status);
-                         },delay);
+                         },delay, self.invokeApply);
             },
 
             cancelSessionStatus: function() {
-                console.log("Cancel Delay Status");
+
                 var self = this;
                 if (typeof self.delayStatusPromise === "object")
                 {
-                    console.log("Cancel Delay Status Occurred");
                     $timeout.cancel(self.delayStatusPromise);
                 }
             },
 
             trackChanges: function() {
-                console.log("track changes");
                 var self = this;
                 if (typeof self.changes === "object") {
                     self.changes.cancel();
@@ -315,7 +350,6 @@ angular.module('app.pouch', [])
             },
 
             handleChanges: function(info, event) {
-                console.log("handleChanges");
                 var self = this;
                 info.occurred_at = new Date();
                 self.storeChangeEvent(info, event);
@@ -327,7 +361,6 @@ angular.module('app.pouch', [])
             },
 
             handleReplicationFrom: function(info, event) {
-                console.log("handleReplicationFrom");
                 var self = this;
                 info.occurred_at = new Date();
                 self.storeReplicationFromEvent(info, event);
@@ -356,7 +389,6 @@ angular.module('app.pouch', [])
             },
 
             handleReplicationTo: function(info, event) {
-                console.log("handleReplicationTo");
                 var self = this;
                 switch (event) {
                     case "uptodate":

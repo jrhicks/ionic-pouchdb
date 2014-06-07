@@ -31,7 +31,7 @@ angular.module('app.todos_controller', [])
         self.todos = [];
         self.loading = true;
 
-        PouchPublisher.use(function() {
+        Pouch.publish(function() {
             return Pouch.db.query('recentTodos', {descending: true, include_docs : true})
                 .then( function(results) {
                     self.loading = false;

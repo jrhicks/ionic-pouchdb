@@ -33,15 +33,17 @@ angular.module('app.pouch_publisher', [])
                     }
                 }
 
-                runFn();
 
                 Pouch.db.info(function(err, info) {
                     self.cancel();
                     self.changes = Pouch.db.changes({
-                        since: info.update_seq,
+                        since: (info.update_seq-1),
                         live: true
                     }).on('change', runFn);
                 });
+
+                runFn();
+
             }
 
         }
