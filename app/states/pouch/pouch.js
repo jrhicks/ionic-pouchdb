@@ -121,13 +121,13 @@ angular.module('app.pouch', [])
             },
 
             loadSettings: function() {
-                if (typeof $localStorage.pouchSettings !== undefined) {
+                if (typeof $localStorage.pouchSettings !== "undefined") {
                     this.settings = $localStorage.pouchSettings
                 }
             },
 
             loadStatus: function() {
-                if (typeof $localStorage.pouchStatus !== undefined) {
+                if (typeof $localStorage.pouchStatus !== "undefined") {
                     this.status = $localStorage.pouchStatus
                 }
             },
@@ -150,13 +150,14 @@ angular.module('app.pouch', [])
                         self.session.publishInProgress = true;
                         f().then(function() {
                             $timeout(function() {
-                                self.session.publishInProgressprogress=false;
+                                self.session.publishInProgress=false;
                             }, 0, self.invokeApply);
                         });
                     }
                 }
 
                 self.db.info(function(err, info) {
+
                     if(typeof self.publishPromise !== "undefined") {
                         if(typeof self.publishPromise.cancel !== "undefined")
                         {
@@ -168,6 +169,7 @@ angular.module('app.pouch', [])
                         since: (info.update_seq-1),
                         live: true
                     }).on('change', runFn);
+
                 });
 
                 runFn();
