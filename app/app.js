@@ -11,7 +11,6 @@ angular.module('app', [
                        'ngStorage',
                        // Components
                        'app.pouch',
-                       'app.pouch_publisher',
                        // Controllers
                        'app.tabs_controller',
                        'app.todos_controller',

@@ -24,7 +24,7 @@ angular.module('app.todos_controller', [])
             })
     })
 
-    .controller('TodosIndexCtrl', function ($scope, Todo, PouchPublisher, Pouch) {
+    .controller('TodosIndexCtrl', function ($scope, Todo, Pouch) {
         var self = this;
 
         self.form = {};
