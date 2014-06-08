@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app.pouch', [])
-    .service('Pouch', function($rootScope, $timeout, $interval,  $localStorage) {
+    .service('Pouch', function($timeout, $localStorage) {
 
         var service =  {
             // Databases
@@ -283,7 +283,7 @@ angular.module('app.pouch', [])
             cancelProgressiveRetry: function() {
                 var self = this;
                 if (typeof self.retryPromise === "object") {
-                    $interval.cancel(self.retryPromise);
+                    $timeout.cancel(self.retryPromise);
                 }
             },
 
@@ -294,10 +294,10 @@ angular.module('app.pouch', [])
                     self.session.currentRetryDelay = self.session.currentRetryDelay + self.session.retryDelayInc;
                 }
 
-                self.retryPromise = $interval( function() {
+                self.retryPromise = $timeout( function() {
                     self.progressiveRetry();
                     self.attemptConnection();
-                    }, self.session.currentRetryDelay, 1, false)
+                    }, self.session.currentRetryDelay, false)
             },
 
             flashSessionStatus: function(status) {
@@ -356,8 +356,9 @@ angular.module('app.pouch', [])
                 info.occurred_at = new Date();
                 self.storeChangeEvent(info, event);
                 if (event === "change") {
-                    self.incrementLocalChanges();
-                    $rootScope.$apply();
+                    $timeout(function() {
+                        self.incrementLocalChanges();
+                    }, 0, self.invokeApply);
                 }
 
             },
@@ -387,7 +388,6 @@ angular.module('app.pouch', [])
                         }
                         break
                     }
-                $rootScope.$apply();
             },
 
             handleReplicationTo: function(info, event) {
@@ -416,7 +416,6 @@ angular.module('app.pouch', [])
                 }
                 info.occurred_at = new Date();
                 this.storeReplicationToEvent(info, event);
-                $rootScope.$apply();
             },
 
 
