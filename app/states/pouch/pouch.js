@@ -146,6 +146,7 @@ angular.module('app.pouch', [])
                 self.session.publishInProgress = false;
 
                 var runFn = function(info) {
+                    console.log(info);
                     if ( self.session.publishInProgress === false) {
                         self.session.publishInProgress = true;
                         f().then(function() {
@@ -154,7 +155,7 @@ angular.module('app.pouch', [])
                             }, 0, self.invokeApply);
                         });
                     }
-                }
+                };
 
                 self.db.info(function(err, info) {
 
@@ -207,7 +208,7 @@ angular.module('app.pouch', [])
             statusIcon: function() {
                 switch(this.session.status) {
                     case "connecting":
-                        return "ion-ios7-cloudy-night-outline"
+                        return "ion-ios7-cloudy-night-outline";
                     case "online":
                         return "ion-ios7-cloud-outline";
                     case "offline":
@@ -245,7 +246,7 @@ angular.module('app.pouch', [])
             // Destroy and recreated local db and changes db
             reset: function() {
                 var self = this;
-                var p1 = PouchDB.destroy("LocalDB").then( function() {
+                PouchDB.destroy("LocalDB").then( function() {
                     $localStorage.pouchStatus = {};
                     $localStorage.session = {};
                     self.disconnect();
@@ -427,7 +428,7 @@ angular.module('app.pouch', [])
                 }
 
                 if(typeof self.replicationFrom === "object") {
-                        self.replicationFrom.cancel();
+                    self.replicationFrom.cancel();
                 }
             },
 
@@ -459,26 +460,9 @@ angular.module('app.pouch', [])
                     .on('uptodate', function(info) {self.handleReplicationFrom(info, "uptodate")})
                     .on('error', function(info)    {self.handleReplicationFrom(info, "error")})
                     .on('complete', function(info) {self.handleReplicationFrom(info, "complete")});
-            },
-
-
-            // Test if connection is still working
-            isConnected: function() {
-                var self = this;
-                if (typeof self.replicationTo === "undefined") {
-                    return false;
-                }
-                if (typeof self.replicationFrom === "undefined") {
-                    return false;
-                }
-                if (self.replicationTo.cancelled) {
-                    return false;
-                }
-                if (self.replicationFrom.cancelled) {
-                    return false;
-                }
-                return true;
             }
+
+
         };
 
         service.init();
