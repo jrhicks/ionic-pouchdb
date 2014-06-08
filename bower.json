@@ -6,7 +6,7 @@
     "pouchdb": "~2.2.3",
     "pouchdb-authentication": "https://github.com/jrhicks/pouchdb-authentication.git#v0.1.1.5",
     "angular-uuid-service": "~0.0.1",
-    "ngstorage": "~0.3.0",
+    "ngstorage": "~0.3.0"
   },
   "overrides": {
     "pouchdb-authentication": {
