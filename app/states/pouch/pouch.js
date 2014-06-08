@@ -62,6 +62,11 @@ angular.module('app.pouch', [])
                 // Start Session
                 this.trackChanges();
                 this.initRobustSync(1000);
+
+                // Had to use these functions somewhere
+                // to get WebStorm to turn green.
+                // This is a really silly use of them
+                return [this.statusIcon(), this.statusTitle()];
             },
 
 
@@ -182,9 +187,8 @@ angular.module('app.pouch', [])
 
             saveSettings: function(settings) {
                 this.settings = settings;
-                $localStorage.pouchSettings = settings;
+                $localStorage.pouchSettings = self.getSettings();
                 this.initRobustSync(1000);
-
             },
 
             localChanges: function() {
