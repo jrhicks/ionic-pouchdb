@@ -15,7 +15,8 @@ var gulp = require('gulp'),
     ngmin = require('gulp-ngmin'),
     wiredep = require('wiredep'),
     shell = require('gulp-shell'),
-    open = require('open');
+    open = require('open'),
+    replace = require('gulp-replace'),
     http_proxy = require("http-proxy");
 
 /**
@@ -88,11 +89,11 @@ gulp.task('app_build', function(done) {
         .pipe(inject(es.merge(lib_js, lib_css),
             {
                 starttag: '<!-- bower:{{ext}} -->',
-                ignorePath: '/app'
+                ignorePath: '/app/'
             }))
         .pipe(inject(es.merge( app_js, states_js, components_js, css),
             {
-                ignorePath: '/app'
+                ignorePath: '/app/'
             }))
         .pipe(gulp.dest('./app'))
         .pipe(app_server.reload())
@@ -170,21 +171,18 @@ gulp.task('www_build', function(done) {
     gulp.src('./app/index.html')
         .pipe(inject(es.merge(lib_js, lib_css),
             {
-                starttag: '<!-- bower:{{ext}} -->',
-                ignorePath: '/www'
+                starttag: '<!-- bower:{{ext}} -->'
             }))
-        .pipe(inject(es.merge(app_js, states_js, components_js, css),
-            {
-                ignorePath: '/www'
-            }))
-        .pipe(minifyHTML())
+        .pipe(inject(es.merge(app_js, states_js, components_js, css)))
+        .pipe(replace('="/www/','="'))
+        //.pipe(minifyHTML())
         .pipe(gulp.dest('./www'))
         .pipe(www_server.reload())
         .on('end', done)
 });
 
 gulp.task('www_serve', function() {
-    www_server.run(9080, '/www');
+    www_server.run(9000, '/www');
 });
 
 gulp.task('www_watch', function() {

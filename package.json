@@ -17,7 +17,8 @@
     "corsproxy": "^0.2.14",
     "http-proxy": "^1.1.4",
     "connect": "^2.17.3",
-    "connect-livereload": "^0.4.0"
+    "connect-livereload": "^0.4.0",
+    "gulp-replace": "^0.3.0"
   },
   "devDependencies": {
     "gulp": "^3.6.2",
