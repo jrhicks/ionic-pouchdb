@@ -5,3 +5,4 @@ app/lib/
 app/scss/build/
 couchdb_vm/.vagrant
 bower_components/
+plugins/
