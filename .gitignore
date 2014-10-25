@@ -1,7 +1,7 @@
 node_modules/
-                                                   .idea
-                                                   www/
-                                                   app/lib/
-                                                   app/scss/build/
-                                                   couchdb_vm/.vagrant
-                                                   bower_components/
+.idea
+www/
+app/lib/
+app/scss/build/
+couchdb_vm/.vagrant
+bower_components/
