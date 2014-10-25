@@ -24,3 +24,11 @@ CouchDB 1.5 VM
 * vagrant up
 
 * http://localhost:5984/_utils/
+
+Data Services
+---------------
+* http://localhost:5984/jrhicks
+
+* username: jrhicks
+
+* password: .........

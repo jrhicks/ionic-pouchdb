@@ -127,7 +127,7 @@ angular.module('app.pouch', [])
 
             loadSettings: function() {
                 if (typeof $localStorage.pouchSettings !== "undefined") {
-                    this.settings = $localStorage.pouchSettings
+                    this.settings = $localStorage.pouchSettings;
                 }
             },
 
@@ -187,8 +187,8 @@ angular.module('app.pouch', [])
 
             saveSettings: function(settings) {
                 this.settings = settings;
-                $localStorage.pouchSettings = self.getSettings();
-                this.initRobustSync(1000);
+                $localStorage.pouchSettings = this.getSettings();
+                 //this.initRobustSync(1000);
             },
 
             localChanges: function() {

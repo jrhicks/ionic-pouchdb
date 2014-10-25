@@ -1,0 +1,68 @@
+.tabs .tab-item .icon.server {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/assets/images/glyphicons_463_server.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.server-receiving {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/assets/images/glyphicons_464_server_receiving.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.server-sending {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/assets/images/glyphicons_464_server_sending.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.server-offline {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/assets/images/glyphicons_466_server_ban.png');
+    background-size:contain;
+}
+
+.server-offline {
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/glyphicons_466_server_ban.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.server-flag {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/assets/images/glyphicons_467_server_flag.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.server-lock {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/assets/images/glyphicons_468_server_lock.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.server-new {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/assets/images/glyphicons_469_server_new.png');
+    background-size:contain;
+}

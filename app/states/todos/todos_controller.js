@@ -32,12 +32,13 @@ angular.module('app.todos_controller', [])
         self.loading = true;
 
         Pouch.publish(function() {
-            return Pouch.db.query('recentTodos', {descending: true, include_docs : true})
+            var promise = Pouch.db.query('recentTodos', {descending: true, include_docs : true, limit: 20})
                 .then( function(results) {
                     self.loading = false;
                     self.inserting = false;
                     self.todos = results["rows"];
                 });
+            return promise;
         });
 
         this.add = function (form) {

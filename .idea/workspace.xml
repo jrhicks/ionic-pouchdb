@@ -1,0 +1,1833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4a5538c-b25c-4e22-8749-2db733bafe38" name="Default" comment="feeling good about the ideas on monitoring the replication.&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/AbstractHttpInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/AbstractOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Address.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/AuthenticationToken.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Base64.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/BuildConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/starter/BuildConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CallbackContext.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Config.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Connection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$4$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$5$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaArgs.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaInterface.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaPlugin.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaResourceApi$OpenForReadResult.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaResourceApi.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$ActivityResult.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$Level16Apis.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient$1$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/DirectoryManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Editor$FaultHidingOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Entry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Snapshot.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Dispatcher$RealResponseBody.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Dispatcher.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/tls/DistinguishedNameParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Dns$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Dns.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/DroidGap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/ErrorCode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ExifHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ExposedJsApi.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure$Builder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/FaultRecoveringOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/FileHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameReader$Handler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameReader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameWriter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HeaderParser$CacheControlHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HeaderParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/HeadersMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/HelloCordova-debug-unaligned.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/HelloCordova-debug.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/HelloCordova.ap_" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/starter/HelloCordova.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$HeaderEntry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$Reader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$Writer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06$Reader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06$Writer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpAuthenticator$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpAuthenticator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpDate$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpDate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpEngine$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpEngine.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$CacheRequestImpl$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$CacheRequestImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$Entry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$EntryCacheResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$EntrySecureCacheResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$ChunkedInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$ChunkedOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$FixedLengthInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$FixedLengthOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpURLConnectionImpl$Retry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsEngine.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl$HttpUrlConnectionDelegate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/IceCreamCordovaWebViewClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/IncomingStreamHandler$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/IncomingStreamHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/JSONUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Job.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-binary-store/LOCK" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-store/LOCK" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/by-sequence/LOCK" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/document-store/LOCK" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/LOG.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/LinearLayoutSoftKeyboardDetect.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-binary-store/MANIFEST-000002" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-store/MANIFEST-000002" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/by-sequence/MANIFEST-000002" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/document-store/MANIFEST-000002" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/MediaType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$FillableInflaterInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/NamedRunnable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$BridgeMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$JsMessage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$PrivateApiBridgeMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator$Challenge.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator$Credential.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/tls/OkHostnameVerifier.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkHttpClient$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkHttpClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkResponseCache.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/OkResponseCacheAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Ping.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$Android23.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$Android41.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$JdkWithJettyNpnPlatform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$JettyNpnProvider.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginEntry.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager$PluginManagerService$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager$PluginManagerService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginResult$Status.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginResult.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/Policy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/starter/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/starter/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/starter/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/starter/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/starter/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RawHeaders$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RawHeaders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Builder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RequestHeaders$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RequestHeaders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Body.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Builder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Receiver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/ResponseHeaders$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/ResponseHeaders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ResponseSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RetryableOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Route.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/RouteDatabase.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RouteSelector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ScrollEvent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Settings.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3$Reader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3$Writer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Builder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Reader$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Reader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$SpdyDataInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$SpdyDataOutputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/SpdyTransport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/StrictLineReader$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/StrictLineReader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/Transport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/TunnelRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/UnknownLengthHttpInputStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Util$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Util.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Variant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Whitelist$URLPattern.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Whitelist.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/admin_party.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/admin_party.xcf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/android_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/blackberry_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/blogger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/blogger_ddoc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/chrome-android_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/chrome_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/dexedLibs/classes-64f696941f9a95a22c63541cfbadf5a6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/employee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/images/finger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/images/finger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/firefox_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_463_server.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_464_server_plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_464_server_receiving.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_464_server_sending.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_465_server_minus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_466_server_ban.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_467_server_flag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_468_server_lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_469_server_new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-ldpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-mdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xhdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/res/drawable/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-hdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-ldpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-mdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-xhdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/internet-explorer-tile_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/internet-explorer_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/new_doc_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/opera_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/assets/pouchdb-getting-started-todo.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/safari-ios_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/browser-logos/safari_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/security_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/vendor/selenium-server-standalone-2.38.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/screenshots/todo-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-animate/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-sanitize/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-uuid-service/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/.fetch.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/.fetch.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/dist/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/cordova/platforms/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/cordova/plugins/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hooks/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/.jshintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-binary-store/000003.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-store/000003.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/by-sequence/000003.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/document-store/000003.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_posts/2014-04-01-pouchdb-2.1.0.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_posts/2014-04-01-welcome-to-the-pouchdb-blog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_posts/2014-04-14-pagination-strategies-with-pouchdb.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_posts/2014-05-01-pouchdb-2.2.0.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_posts/2014-05-01-secondary-indexes-have-landed-in-pouchdb.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_posts/2014-06-01-pouchdb-2.2.3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_layouts/2ColLeft.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/AbstractHttpInputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/AbstractOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Address.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/AndroidManifest.cordova.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/AndroidManifest.cordova.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/AndroidManifest.xml.d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/Base64.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-gen/org/apache/cordova/BuildConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-gen/com/ionicframework/starter/BuildConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/ios/CDVDevice.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/ios/CDVDevice.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/src/ios/CDVLogger.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/src/ios/CDVLogger.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-binary-store/CURRENT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-store/CURRENT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/by-sequence/CURRENT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/document-store/CURRENT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Connection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/ConnectionPool.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaChromeClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/src/wp/DebugConsole.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/wp/Device.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/src/org/apache/cordova/device/Device.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/android/Device.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/firefoxos/DeviceProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/tizen/DeviceProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/windows8/DeviceProxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/DirectoryManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/DiskLruCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Dispatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/tls/DistinguishedNameParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/Dns.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/DroidGap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/ErrorCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExifHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Failure.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/FaultRecoveringOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/FileHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/FrameReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/FrameWriter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HeaderParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/HeadersMode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/HelloCordova-debug-unaligned.apk.d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/HelloCordova.ap_.d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/src/com/ionicframework/starter/HelloCordova.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/Hpack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/Http20Draft06.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpAuthenticator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpDate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpEngine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/HttpResponseCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpTransport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpsEngine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/IceCreamCordovaWebViewClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/IncomingStreamHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/JSONUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Job.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-binary-store/LOG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/attach-store/LOG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/by-sequence/LOG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/oldStyle/document-store/LOG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/LinearLayoutSoftKeyboardDetect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/MediaType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/NOTICE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/NOTICE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/NameValueBlockReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/NamedRunnable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/OkAuthenticator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/OkHttpClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/OkResponseCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/OkResponseCacheAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/Ping.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/Platform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/Policy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-gen/R.java.d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-gen/R.java.d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-gen/com/ionicframework/starter/R.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/R.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-animate/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-sanitize/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-uuid-service/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/RELEASENOTES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/RELEASENOTES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/RawHeaders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Request.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/RequestHeaders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Response.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/ResponseHeaders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/ResponseSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/RetryableOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/Route.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/RouteDatabase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/RouteSelector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ScrollEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/Settings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/Spdy3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/SpdyConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/SpdyStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/SpdyTransport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/StrictLineReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/Transport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/TunnelRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/http/UnknownLengthHttpInputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/Variant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_action-sheet.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_animations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_backdrop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_badge.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_button-bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_button.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_checkbox.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_config.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_form.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/ionicons/_ionicons-animation.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/ionicons/_ionicons-font.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/ionicons/_ionicons-icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/ionicons/_ionicons-variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_items.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_loading.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_menu.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_modal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_platform.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_popup.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_progress.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_radio.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_range.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_reset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_scaffolding.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_select.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_slide-box.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_split-pane.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_tabs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_toggle.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_type.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_util.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/_where-is-www.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/actionSheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/actionSheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/couchdb_vm/.vagrant/machines/default/virtualbox/action_provision" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/couchdb_vm/.vagrant/machines/default/virtualbox/action_set_name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/adapter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/adapters.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/ajax-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_includes/alert_end.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_includes/alert_start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_includes/anchor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/anchors.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/android.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/android_sdk_version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/android_sdk_version" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-animate/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-animate/angular-animate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-animate/angular-animate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/angular-sanitize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-sanitize/angular-sanitize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-sanitize/angular-sanitize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/release/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/release/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/angularOverrides.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/animation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/animation/animation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_includes/api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/api.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/api.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api_menu.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api_menu_version.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api_version_select.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/appinfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_data/authors.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/backdrop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/scripts/baldrick-test.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/animation/bezier.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/bind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/blob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/block.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/blog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-animate/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-sanitize/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-uuid-service/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/browser.migration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/browser.worker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/buffer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/build-all-plugins.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/build-plugin.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/build-site.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/build.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/build.prop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/build.prop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/scripts/bundle-browserify-test.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/filters/capital.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/changes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/check_reqs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/check_reqs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/chromeappbackground.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes.dex.d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/clean.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/clean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/clean" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/collectionRepeat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/collectionRepeatDataSource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/collectionRepeatManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/compat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/componentGroup.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/plugins/config-level-js.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/plugins/config-localstorage-down.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/plugins/config-memdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/cordova/.cordova/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/cordova/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/www/console-via-logger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/src/ubuntu/console.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/src/ubuntu/console.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/constructor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/collection-repeat/contacts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/collection-repeat/contacts.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/content.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/controller.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo/css.template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/custom_rules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_layouts/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/defaults.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/delegateService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo_index.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo_list.template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo_script.template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/processors/demos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/bin/dev-server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/dev-server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/ubuntu/device.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/ubuntu/device.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/device.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/ubuntu/device.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/www/device.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/directive.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/docs.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/animation/dynamics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/states/todos/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/states/todos/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/errors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/errors.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/evalFilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/evalView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/lib/events.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/exec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/external.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/faq.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/filter.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/function.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/generate-versions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/gesture.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/get-version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/getting-started.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/glyphicons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/gql.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/header.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/headerFooterBar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/highlight.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo/html.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/adapters/http.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/couchdb_vm/.vagrant/machines/default/virtualbox/id" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/adapters/idb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/ignore.words" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/processors/index-page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/actionsheet/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/app-intro-walkthrough/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/checkbox/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/collection-repeat/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/flickr-search-example/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/frosted-glass-effect/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/google-maps/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/lists/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/loading-bar/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/modal/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/popup/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/pull-to-refresh/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/radio-buttons/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/shrinking-header/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/side-menu-and-navigation/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/sign-in-then-tabs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/starter-template/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/swipeable-cards/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/tabs-and-navigation/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/thumbnail-list/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/toggle/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/states/pouch/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/states/tabs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/states/todos/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/states/pouch/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/states/tabs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/states/todos/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/tag-defs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/plugins/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/performance/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/src/blackberry10/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/doc/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/doc/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/index.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/couchdb_vm/.vagrant/machines/default/virtualbox/index_uuid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/infiniteScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/input-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/animation/instance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/ionic-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/js/ionic-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/js/ionic-angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ionic-pouchdb.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/js/ionic.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/js/ionic.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/ionic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/css/ionic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/ionic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/js/ionic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/css/ionic.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/js/ionic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ionic.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/ionic.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/scss/ionicons/ionicons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/item.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/itemDeleteButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/itemOptionButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/itemReorderButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo/javascript.template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/processors/jekyll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/scripts/jenkins-deploy.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jrhicks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/jumbotron.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/keyboardAttach.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/processors/keywords.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/processors/latest-version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/learn.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/plugins/levelalt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/adapters/leveldb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/assets/css/lib.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/lib.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/assets/css/lib.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/lib.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/lib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/lib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/inline-tag-defs/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/controller/listController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/loading.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/local.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/local.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/decorators/location.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/log.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/log.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/www/logger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/logo.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/docs/logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/lib/macros.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/img/mark.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/menuClose.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/menuToggle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/merge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/lib/methods.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/plugins/migrate-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/migrate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_includes/nav.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/navBackButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/navBar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/controller/navBarController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/navBarDelegate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/navButtons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/navClear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/navView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/ngClick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/ngStorage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/ngStorage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/ngStorage.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/node.setup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/object.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/page.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/pane.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/performance/perf.basics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/performance/perf.reporter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/performance/perf.views.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/platform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.console/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_layouts/post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/post.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_includes/post_details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/glyph_hack/pouch.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/deps/pouchdb-1.1.0-postfixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/deps/pouchdb-2.0.0-postfixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/deps/pouchdb-2.2.0-postfixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/pouchdb-nightly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/pouchdb.authentication.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/dist/pouchdb.authentication.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/dist/pouchdb.authentication.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/pouchdb.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/adapters/preferredAdapters-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/adapters/preferredAdapters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/print.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/proguard-project.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/proguard-project.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/proguard.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/ant-build/proguard.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/lib/properties.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/provider.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/publish-site.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/radio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/refresher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/release.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/repl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/replicate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/resolve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/lib/returns.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/ribbon.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/run-cordova.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/run-coverage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/run-mocha.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/run-test.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/run.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/run.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/run" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo/scenario.template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/actionsheet/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/app-intro-walkthrough/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/checkbox/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/collection-repeat/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/flickr-search-example/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/frosted-glass-effect/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/google-maps/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/lists/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/loading-bar/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/modal/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/popup/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/pull-to-refresh/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/radio-buttons/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/shrinking-header/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/side-menu-and-navigation/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/sign-in-then-tabs/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/starter-template/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/swipeable-cards/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/tabs-and-navigation/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/thumbnail-list/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/toggle/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/scroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/controller/scrollController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/scrollDelegate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/service.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/setup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/sideMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/sideMenuContent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/controller/sideMenuController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/sideMenuDelegate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/sideMenus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/slideBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/slideBoxDelegate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/_includes/social.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/spawn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ngstorage/test/spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/demo/spec.template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/scripts/start_standalone_couch.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/stateDirectives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/stateFilters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/states.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/states.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/actionsheet/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/app-intro-walkthrough/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/checkbox/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/collection-repeat/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/flickr-search-example/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/frosted-glass-effect/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/google-maps/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/lists/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/loading-bar/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/modal/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/popup/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/pull-to-refresh/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/radio-buttons/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/shrinking-header/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/side-menu-and-navigation/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/sign-in-then-tabs/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/starter-template/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/swipeable-cards/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/tabs-and-navigation/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/thumbnail-list/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/demos/toggle/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/couchdb_vm/.vagrant/machines/default/virtualbox/synced_folders" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/controller/tabController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/tabNav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/controller/tabsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/tabsDelegate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/taskqueue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/templateFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/templateLoader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/bin/test-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.aa.setup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.all_docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.attachments.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.basics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.bulk_docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.changes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.compaction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.conflicts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.constructor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.design_docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.get.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/performance/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.http.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.issue1175.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.issue221.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.issue915.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.migration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/unit/test.once.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.replication.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.revs_diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.slash_id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.sync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.taskqueue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.uuids.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/test.views.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/lib/this.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/animation/timing-functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/toggle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/type.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/upsert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/urlMatcherFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/urlRouter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/api/utility.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb-authentication/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/performance/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/uuid-svc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-uuid-service/uuid-svc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-uuid-service/uuid-svc.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/deps/uuid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/pouchdb/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/version-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/processors/version-data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/version.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/release/version.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/cordova/version" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/directive/view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/viewDirective.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/viewScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/js/angular/service/viewService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/webrunner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/lib/adapters/websql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/docs/static/less/bootstrap/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/pouchdb/tests/worker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/ionic/docs/templates/lib/yaml.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/states/pouch/pouch.js" afterPath="$PROJECT_DIR$/app/states/pouch/pouch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/states/todos/todos_controller.js" afterPath="$PROJECT_DIR$/app/states/todos/todos_controller.js" />
+    </list>
+    <ignored path="ionic-pouchdb.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ionic-pouchdb" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pouch.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/states/pouch/pouch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="179" column="0" selection-start="5706" selection-end="5706" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="8177">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vagrantfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/couchdb_vm/Vagrantfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="17" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todos_controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/states/todos/todos_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="105" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/states/todos/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="18" selection-start="432" selection-end="432" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="31" selection-start="379" selection-end="379" vertical-scroll-proportion="0.7052933" vertical-offset="0" max-vertical-offset="699">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/states/todos/todo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="32" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="816">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pouch_controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/states/pouch/pouch_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="33" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="6" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/components/services/change_controller.js" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html" />
+        <option value="$PROJECT_DIR$/app/components/services/change_watcher.js" />
+        <option value="$PROJECT_DIR$/app/assets/css/finger.css" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.js" />
+        <option value="$PROJECT_DIR$/app/models/account.js" />
+        <option value="$PROJECT_DIR$/app/views/account/index.html" />
+        <option value="$PROJECT_DIR$/app/components/services/pouch_sync.js" />
+        <option value="$PROJECT_DIR$/app/models/todo.js" />
+        <option value="$PROJECT_DIR$/app/controllers/tabs_controller.js" />
+        <option value="$PROJECT_DIR$/app/components/services/pouch_watcher.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/views/tabs/index.html" />
+        <option value="$PROJECT_DIR$/app/views/info/index.html" />
+        <option value="$PROJECT_DIR$/app/controllers/accounts_controller.js" />
+        <option value="$PROJECT_DIR$/app/controllers/info_controller.js" />
+        <option value="$PROJECT_DIR$/app/views/todos/index.html" />
+        <option value="$PROJECT_DIR$/app/controllers/todos_controller.js" />
+        <option value="$PROJECT_DIR$/app/views/todos/edit.html" />
+        <option value="$PROJECT_DIR$/app/states/todos/edit.html" />
+        <option value="$PROJECT_DIR$/app/pouch.html" />
+        <option value="$PROJECT_DIR$/app/puton.js" />
+        <option value="$PROJECT_DIR$/app/puton.html" />
+        <option value="$PROJECT_DIR$/app/states/info/info_controller.js" />
+        <option value="$PROJECT_DIR$/app/components/services/pouch.js" />
+        <option value="$PROJECT_DIR$/app/states/account/accounts_controller.js" />
+        <option value="$PROJECT_DIR$/app/states/info/index.html" />
+        <option value="$PROJECT_DIR$/app/states/account/index.html" />
+        <option value="$PROJECT_DIR$/app/states/pouch/accounts_controller.js" />
+        <option value="$PROJECT_DIR$/app/assets/css/item-animate.css" />
+        <option value="$PROJECT_DIR$/app/assets/css/fontawesome_custom.css" />
+        <option value="$PROJECT_DIR$/app/states/pouch/pouch.css" />
+        <option value="$PROJECT_DIR$/app/states/pouch/index.html" />
+        <option value="$PROJECT_DIR$/app/states/todos/todo.css" />
+        <option value="$PROJECT_DIR$/app/components/services/pouch_publisher.js" />
+        <option value="$PROJECT_DIR$/app/states/pouch/PouchService.js" />
+        <option value="$PROJECT_DIR$/ionic.project" />
+        <option value="$PROJECT_DIR$/app/states/tabs/index.html" />
+        <option value="$PROJECT_DIR$/app/states/tabs/tabs_controller.js" />
+        <option value="$PROJECT_DIR$/app/states/todos/index.html" />
+        <option value="$PROJECT_DIR$/app/states/todos/todo.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/states/pouch/pouch_controller.js" />
+        <option value="$PROJECT_DIR$/app/states/pouch/pouch.js" />
+        <option value="$PROJECT_DIR$/app/states/todos/todos_controller.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="150" />
+    <option name="y" value="57" />
+    <option name="width" value="1026" />
+    <option name="height" value="841" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionic-pouchdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionic-pouchdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionic-pouchdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionic-pouchdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionic-pouchdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="couchdb_vm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionic-pouchdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionic-pouchdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="preferences.externalTools" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="D:/invoice" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="&#10;Po" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ionic-pouchdb\www" />
+      <recent name="D:\ionic-pouchdb\www\assets" />
+      <recent name="D:\ionic-pouchdb\app\fonts" />
+      <recent name="D:\ionic-pouchdb\app" />
+      <recent name="D:\ionic-pouchdb\app\views\todos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ionic-pouchdb\www" />
+      <recent name="D:\ionic-pouchdb\www\www\js" />
+      <recent name="D:\ionic-pouchdb" />
+      <recent name="D:\ionic-pouchdb\app" />
+      <recent name="D:\ionic-pouchdb\app\assets\glyph_hack" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4a5538c-b25c-4e22-8749-2db733bafe38" name="Default" comment="" />
+      <created>1401331106149</created>
+      <updated>1401331106149</updated>
+    </task>
+    <task id="LOCAL-00001" summary="update instructions">
+      <created>1401331709013</created>
+      <updated>1401331709013</updated>
+    </task>
+    <task id="LOCAL-00002" summary="various updates">
+      <created>1401335172949</created>
+      <updated>1401335172949</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove angular-pouchdb">
+      <created>1401414996701</created>
+      <updated>1401414996701</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Playing with control helper">
+      <created>1401417971203</created>
+      <updated>1401417971203</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Playing with control helper&#10;">
+      <created>1401418307921</created>
+      <updated>1401418307921</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Use rails folder structure.  Simplify naming conventions.&#10;">
+      <created>1401460706713</created>
+      <updated>1401460706713</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Testing out some ideas  on a &quot;connection status&quot; service and controller.">
+      <created>1401496145588</created>
+      <updated>1401496145588</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Testing out a changesdb to track sync progress.&#10;">
+      <created>1401663581067</created>
+      <updated>1401663581067</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Testing out a changesdb to track sync progress.&#10;">
+      <created>1401749425914</created>
+      <updated>1401749425914</updated>
+    </task>
+    <task id="LOCAL-00010" summary="working out some ideas on monitoring monitoring sync status and settings.&#10;">
+      <created>1401908727651</created>
+      <updated>1401908727651</updated>
+    </task>
+    <task id="LOCAL-00011" summary="working out some ideas on monitoring monitoring sync status and settings.&#10;">
+      <created>1401913161919</created>
+      <updated>1401913161919</updated>
+    </task>
+    <task id="LOCAL-00012" summary="working out some ideas on monitoring monitoring sync status and settings.&#10;">
+      <created>1401924046972</created>
+      <updated>1401924046972</updated>
+    </task>
+    <task id="LOCAL-00013" summary="working out some ideas on monitoring monitoring sync status and settings.&#10;">
+      <created>1401930607973</created>
+      <updated>1401930607973</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feeling good about the ideas on monitoring the replication.">
+      <created>1401942603632</created>
+      <updated>1401942603632</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feeling good about the ideas on monitoring the replication.&#10;">
+      <created>1402015017496</created>
+      <updated>1402015017496</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Its broken, but I wanted to capture these changes.&#10;">
+      <created>1402151242464</created>
+      <updated>1402151242464</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix comma">
+      <created>1402238453123</created>
+      <updated>1402238453123</updated>
+    </task>
+    <task id="LOCAL-00018" summary="finished moving pouch publisher into service.&#10;">
+      <created>1402242908774</created>
+      <updated>1402242908774</updated>
+    </task>
+    <task id="LOCAL-00019" summary="pouch.js woring well.  needs better name.">
+      <created>1402243408443</created>
+      <updated>1402243408443</updated>
+    </task>
+    <task id="LOCAL-00020" summary="remove 2 dependencies">
+      <created>1402245233183</created>
+      <updated>1402245233183</updated>
+    </task>
+    <task id="LOCAL-00021" summary=".&#10;">
+      <created>1402253788643</created>
+      <updated>1402253788643</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Green in WebStorm.&#10;">
+      <created>1402266820542</created>
+      <updated>1402266820542</updated>
+    </task>
+    <task id="LOCAL-00023" summary="gulp-inject keeps leading backslash which prevents working in Android.  This was super annoying and painful to discover.  Fixed by dittching the ignorepath option and using gulp-replace.&#10;">
+      <created>1402281114233</created>
+      <updated>1402281114233</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="150" y="57" width="1026" height="841" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34569377" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3015717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.284689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="update instructions" />
+    <MESSAGE value="various updates" />
+    <MESSAGE value="remove angular-pouchdb" />
+    <MESSAGE value="Playing with control helper" />
+    <MESSAGE value="Playing with control helper&#10;" />
+    <MESSAGE value="Use rails folder structure.  Simplify naming conventions.&#10;" />
+    <MESSAGE value="Testing out some ideas  on a &quot;connection status&quot; service and controller." />
+    <MESSAGE value="Testing out a changesdb to track sync progress.&#10;" />
+    <MESSAGE value="working out some ideas on monitoring monitoring sync status and settings.&#10;" />
+    <MESSAGE value="feeling good about the ideas on monitoring the replication." />
+    <MESSAGE value="feeling good about the ideas on monitoring the replication.&#10;" />
+    <MESSAGE value="Its broken, but I wanted to capture these changes.&#10;" />
+    <MESSAGE value="fix comma" />
+    <MESSAGE value="finished moving pouch publisher into service.&#10;" />
+    <MESSAGE value="pouch.js woring well.  needs better name." />
+    <MESSAGE value="remove 2 dependencies" />
+    <MESSAGE value=".&#10;" />
+    <MESSAGE value="Green in WebStorm.&#10;" />
+    <MESSAGE value="gulp-inject keeps leading backslash which prevents working in Android.  This was super annoying and painful to discover.  Fixed by dittching the ignorepath option and using gulp-replace.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="gulp-inject keeps leading backslash which prevents working in Android.  This was super annoying and painful to discover.  Fixed by dittching the ignorepath option and using gulp-replace.&#10;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="38" selection-start="5426" selection-end="5426" vertical-scroll-proportion="0.0" vertical-offset="2643" max-vertical-offset="3570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="38" selection-start="240" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="6" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="51" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="652" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/tabs/tabs_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="38" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/tabs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="78" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="3604" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/finger.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="15" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="41" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/todos_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="74" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/tabs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/couchdb_vm/cookbooks/couchdb/recipes/ppa.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="44" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="23" selection-start="783" selection-end="783" vertical-scroll-proportion="0.5946924" vertical-offset="0" max-vertical-offset="829" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_465_server_minus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_467_server_flag.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_468_server_lock.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_466_server_ban.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_464_server_plus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/glyph_hack/glyphicons_463_server.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/glyph_hack/pouch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="21" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="59" selection-start="702" selection-end="712" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/todo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="8" selection-start="59" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1496" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/finger.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/ionic.app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="109446" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="519" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/ionic/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="15" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1054" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/tabs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.16732283" vertical-offset="0" max-vertical-offset="508" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/tabs/tabs_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="2" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="51" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="652" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="393" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="82" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/api_proxy_server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="30" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="1999" selection-end="1999" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="3570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/pouch/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/pouch/pouch_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="6" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/pouch/pouch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="0" selection-start="5706" selection-end="5706" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="8177">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/couchdb_vm/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="32" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/todos_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="105" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/states/todos/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="432" selection-end="432" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="31" selection-start="379" selection-end="379" vertical-scroll-proportion="0.7052933" vertical-offset="0" max-vertical-offset="699">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
