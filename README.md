@@ -32,3 +32,11 @@ Data Services
 * username: jrhicks
 
 * password: .........
+
+Setting up Users
+-------------
+* Create an admin and disable admin party - http://guide.couchdb.org/draft/security.html
+
+* curl -X PUT http://localhost:5984/_config/admins/anna -d '"secret"'
+
+* anna secret

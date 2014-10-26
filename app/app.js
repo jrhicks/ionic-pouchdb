@@ -14,9 +14,11 @@ angular.module('app', [
                        // Controllers
                        'app.tabs_controller',
                        'app.todos_controller',
+                       'app.ar_devs_controller',
                        'app.pouch_controller',
                        // Models
-                       'app.todo'
+                       'app.todo',
+                       'app.ar_dev'
     ])
 
     .run(function($ionicPlatform) {
@@ -36,5 +38,5 @@ angular.module('app', [
     })
 
     .config(function ($urlRouterProvider) {
-        $urlRouterProvider.otherwise('/tabs/todos/index');
+        $urlRouterProvider.otherwise('/tabs/ar_devs/index');
     });

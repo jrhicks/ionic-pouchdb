@@ -1,0 +1,18 @@
+<ion-view title="AR DEVS">
+    <ion-content class="has-header">
+
+        <ion-nav-buttons side="right">
+            <a class="button icon icon-right" href="#/tabs/ar_devs/new">New</a>
+        </ion-nav-buttons>
+
+        <ion-list>
+            <ion-item href="#/tabs/ar_devs/edit/{{ar_dev.id}}" class="item animate-item" ng-repeat="ar_dev in ar_dev_index.ar_devs">
+             <span class="todo-done-{{todo.doc.isComplete}}">
+                 {{ar_dev.doc.name}} - {{ar_dev.doc.project}}
+             </span>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>
+

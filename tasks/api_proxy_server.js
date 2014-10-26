@@ -28,12 +28,11 @@ proxyOptions = {
 }
 
 var run = function(port, directory) {
-    expressServer.use(connectSlow(slowOptions));
     expressServer.use(lrScript());
     expressServer.use('/_api', proxyMiddleware(proxyOptions));
     expressServer.use(connect.logger("dev"));
     expressServer.use(express.static(process.cwd() + directory));
-    expressServer.listen(port);
+    expressServer.use(connect.static('public')).listen(9000, '0.0.0.0');
     reloadServer.listen(LIVERELOAD_PORT);
 };
 

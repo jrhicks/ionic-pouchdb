@@ -186,9 +186,10 @@ angular.module('app.pouch', [])
             },
 
             saveSettings: function(settings) {
+                this.db.logout();
                 this.settings = settings;
                 $localStorage.pouchSettings = this.getSettings();
-                 //this.initRobustSync(1000);
+                this.initRobustSync(1000);
             },
 
             localChanges: function() {
@@ -438,9 +439,11 @@ angular.module('app.pouch', [])
 
             createRemoteDb: function() {
                 var self = this;
+
                 if (typeof self.settings.database === "string")
                 {
                     self.remotedb = new PouchDB(this.settings.database);
+                     self.remotedb.login(this.settings.username, this.settings.password, function (err, response) {})
                 }
             },
 
