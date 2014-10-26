@@ -25,13 +25,9 @@ angular.module('app.ar_dev', [])
 
         return {
             add: function(obj) {
-                alert("Saved 1");
                 obj._id = 'ar_dev_'+rfc4122.v4();
-                alert("Saved 1.2");
                 obj.doc_type = 'ar_dev';
                 obj.created_at = new Date();
-                alert("Saved 2");
-                alert("Saved 3");
                 return Pouch.db.put(obj);
             },
 
